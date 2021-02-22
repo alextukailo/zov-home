@@ -1,0 +1,24 @@
+:root {
+    --colorMain: #f8f8f8;
+    --colorBlue: #1A56B0;
+    --colorDarkBlue: #254D8A;
+    --colorBlack: #2C2C2C;
+    --colorWhite: #ffffff;
+    --fontColor: #1D1D1D;
+    --secondaryFontColor: #3F3F3F;
+    --shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@custom-media --mobile-screen (width <= 537px);
+@custom-media --laptop-screen (width <= 768px);
+@custom-media --desctop-screen (width <= 1200px);
+
+@custom-selector :--heading h1, h2, h3, h4;
+
+:--heading {
+  margin: 0;
+  padding: 0;
+}
+

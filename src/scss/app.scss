@@ -1,0 +1,19 @@
+//base
+@import "./base/general";
+@import "./base/typography";
+@import "./base/variables";
+
+//modules
+@import "./modules/buttons";
+@import "./mixins/mixins";
+@import "./modules/modifiers";
+@import "./modules/owl";
+
+//components
+@import "./components/header";
+@import "./components/hero"; 
+@import "./components/products"; 
+@import "./components/about"; 
+
+
+// @import "./components/footer";

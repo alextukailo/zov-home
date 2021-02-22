@@ -1,0 +1,22 @@
+.footer {
+
+    &__inner {
+        padding: 6rem 0 3rem 0 ;
+        
+        background-size: cover;
+    }
+
+   &__content {
+       position: relative;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin-bottom: 7rem;
+       @media(--mobile-screen) {
+            margin-bottom: 4rem;
+        }
+   } 
+
+   
+
+}

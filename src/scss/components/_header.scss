@@ -1,0 +1,225 @@
+// .section {
+
+//     &__heading {
+//         width: cacl(var(--mainWidth)/3);
+//         color: var(--colorGrey);
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }
+
+// @media (--mobile-screen) {
+//     body {
+//         background-color: red;
+//     }
+// }
+
+.section__wrap {
+    
+}
+
+.header {
+
+    &__inner {
+
+    }
+
+    .top-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      &__group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      &__social {
+        margin: 0 4rem;
+      }
+
+      &__callus, &__phone {
+        margin-right: 6rem;
+      }
+
+      &__phone {
+        margin-right: 6rem;
+      }
+
+      &__link {
+        margin-right: 1.2rem;
+
+        &_bold {
+          display: block;
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          letter-spacing: 0.02em;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: #1D1D1D;
+          text-decoration: none;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &__text {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.02em;
+        color: #818181;
+        margin-bottom: .4rem;
+      }
+
+      &__text.phone {
+        display: flex;
+        align-items: baseline;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.02em;
+        color: #818181;
+        margin-bottom: .8rem;
+        margin-top: -1.2rem;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 1.7rem;
+          height: 1.7rem;
+          background: url('../img/icons/call.svg') no-repeat;
+          background-size: contain;
+          margin-right: 1rem;
+          
+        }
+      }
+
+      .logo {
+        background: var(--colorBlack);
+        padding: 2rem 4rem;
+        &__source {
+          display: block;
+        }
+
+      }
+
+
+    }
+
+    .nav {
+      
+      background: #F4F4F4;
+
+      &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__heading {
+        width: 13.8rem;
+        font-weight: 600;
+        font-size: .8rem;
+        line-height: .9rem;
+        text-align: center;
+        letter-spacing: 0.02em;
+        background: #1D1D1D;
+        color: #FFFFFF;
+        padding: 1.8rem 0;
+        text-align: center;
+      }
+
+      &__group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      &__link {
+        display: block;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.02em;
+        color: #1D1D1D;
+        text-transform: uppercase;
+        margin: 0 1.5rem;
+
+        &:first-child {
+          margin-left: 4rem;
+        }
+      }
+
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+    }
+
+    .search {
+
+      display: flex;
+      align-items: center;
+      
+      &__button {
+        border: none;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        &:before {
+          content: '';
+          display: block;
+          background: url('../img/icons/search.svg') no-repeat;
+          width: 1.8rem;
+          height: 1.8rem;
+          cursor: pointer;
+          background-size: contain;
+        }
+      }
+
+      &__input {
+
+        input {
+          border: none;
+          font-weight: 500;
+          width: 13rem;
+          font-size: 14px;
+          font-size: 1.4rem;
+          line-height: 12px;
+          letter-spacing: 0.02em;
+          color: #1D1D1D;
+          background: transparent;
+          padding: 15px;
+          padding: 1.5rem;
+          padding-right: 0;
+          outline: none;
+          -webkit-transition: all .2s;
+          transition: all .2s;
+
+          &:focus {
+            width: 25rem;
+            text-align: left;
+          }
+
+          &::placeholder {
+            font-size: 1rem;
+            text-align: end;
+
+            &:focus {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+    }
+    
+  }

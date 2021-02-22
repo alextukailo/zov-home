@@ -1,0 +1,45 @@
+.button {
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    padding: 1.4rem 1.5rem;
+    background: transparent;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+
+    @media(--mobile-screen) {
+        width: 100%;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+    }
+
+    &__black {
+        color: var(--colorWhite);
+        background: var(--colorBlack);
+        border: .2rem solid #484848;
+    }
+
+    &__blue {
+        color: var(--colorWhite);
+        background: var(--colorBlue);
+        border: .2rem solid var(--colorBlue);
+    }
+
+    &_ghost-white {
+        color: var(--colorWhite);
+        border: .2rem solid var(--colorWhite);
+    }
+
+    &_ghost-black {
+        
+    }
+
+ }

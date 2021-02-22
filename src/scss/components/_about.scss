@@ -1,0 +1,50 @@
+.about {
+
+    &__inner {
+        background: #2C2C2C;
+        padding: 5rem 0;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        @media(--mobile-screen) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        margin-right: 3rem;
+        img {
+
+        }
+    }
+
+    &__wrap {
+
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: .8rem;
+    }
+
+    &__description {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+}

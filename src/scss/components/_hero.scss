@@ -1,0 +1,55 @@
+.hero {
+
+    &__inner {
+    //    background: url('../img/backgrounds/hero.jpg') no-repeat;
+    //    background-size: cover;
+    }
+
+    &__slide {
+        padding: 10rem 0;
+    }
+
+    &__heading {
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 2.2rem;
+
+        span {
+            font-size: 9.6rem;
+            line-height: 11.3rem;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on; 
+        }
+    }
+   
+    &__description {
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        margin-bottom: 6rem;
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+       width: 100%;
+       max-width: 19.7rem;
+       text-align: center; 
+       margin-right: 3rem;
+
+       &:last-child {
+        margin-right: 0;
+       }
+    }
+}
+
