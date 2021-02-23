@@ -27,7 +27,7 @@
     }
 
     &__wrap {
-
+        align-items: center;
     }
 
     &__heading {
@@ -47,4 +47,99 @@
         color: #FFFFFF;
     }
 
+    &__video {
+        position: relative;
+        width: 100%;
+        height: 32rem;
+        background: url('../img/backgrounds/video.jpg');
+        
+        &_btn {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            cursor: pointer;
+            opacity: .8;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                background: url('../img/icons/play-circle.svg') no-repeat;
+                width: 4.2rem;
+                height: 4.2rem;
+                background-size: contain;
+                margin-right: 1.2rem;
+                
+            }
+        }
+    }
+
+    &__modal {
+        display: block;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 1);
+        z-index: 999999;
+        padding: 0 3rem;
+    }
+
+    
+
+
+
+}
+
+.modal-about {
+    display: none;
+
+    &__inner {
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 100%;
+        width: 100%;
+        background: #fff;
+        margin-top: 70px;
+        margin-top: 7rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    &__close {
+        position: absolute;
+        top: -1.5rem;
+        right: -1.5rem;
+        z-index: 9999;
+        padding: 1rem 1.2rem;
+        background: var(--colorWhite);
+        border-radius: 50%;
+        box-shadow: var(--shadow);
+        cursor: pointer;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            
+        }
+    }
 }

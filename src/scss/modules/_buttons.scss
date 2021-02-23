@@ -33,6 +33,12 @@
         border: .2rem solid var(--colorBlue);
     }
 
+    &__white {
+        color: var(--fontColor);
+        background: var(--colorWhite);
+        border: .2rem solid var(--colorWhite);
+    }
+
     &_ghost-white {
         color: var(--colorWhite);
         border: .2rem solid var(--colorWhite);
@@ -43,3 +49,43 @@
     }
 
  }
+
+ .button__blue_arrow {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-sizing: border-box;
+     padding: 0;
+     padding-left: 5.5rem;
+
+     &:after {
+         content: url('../img/icons/white_arrow.svg');
+         display: flex;
+        justify-content: center;
+        align-items: center;
+         width: 4.8rem;
+         height: 4.8rem;
+         background: #254D8A;
+         margin-left: 2.7rem;
+     }
+ }
+
+ .button__white_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 5.5rem;
+
+    &:after {
+        content: url('../img/icons/black_arrow.svg');
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        width: 4.8rem;
+        height: 4.8rem;
+        background: #F8F8F8;
+        margin-left: 2.7rem;
+    }
+}

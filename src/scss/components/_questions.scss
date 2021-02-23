@@ -1,0 +1,12 @@
+.questions {
+
+    &__inner {
+        background: url('../img/backgrounds/questions.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    &__text {
+        max-width: 40rem;
+    }
+
+}

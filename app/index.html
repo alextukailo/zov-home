@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App</title>
     <link rel="stylesheet" href="../dist/css/app.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -156,21 +156,21 @@
            <div class="about__items">
                <div class="about__item">
                    <div class="about__image"><img src="/src/img/icons/discount.svg" alt="zov"></div>
-                   <div class="about__wrap">
+                   <div>
                        <h4 class="about__heading">СКИДКИ И АКЦИИ</h4>
                        <p class="about__description">На выставочные образцы в салонах и акционный ассортимент на сайте</p>
                    </div>
                </div>
                <div class="about__item">
                 <div class="about__image"><img src="/src/img/icons/insurance.svg" alt="zov"></div>
-                <div class="about__wrap">
+                <div>
                     <h4 class="about__heading">ГАРАНТИЯ КАЧЕСТВА</h4>
                     <p class="about__description">Полный контроль производства от макета до сборки изделия</p>
                 </div>
             </div>
             <div class="about__item">
                 <div class="about__image"><img src="/src/img/icons/delivery.svg" alt="zov"></div>
-                <div class="about__wrap">
+                <div>
                     <h4 class="about__heading">ДОСТАВКА И СБОРКА</h4>
                     <p class="about__description">Максимально упрощаем процесс
                         покупки для вашего комфорта</p>
@@ -183,8 +183,210 @@
 <section class="section">
     <div class="section__inner">
         <div class="container">
-           
+            <div class="products__head">
+                <h3 class="section__heading products__heading">Наша продукция</h3>
+                <div class="filter__wrap products__filter_wrap">
+                    <div class="form-control">
+                        <input class="app__checkbox products__filter" id="aim1" checked type="radio" name="quest_aim" value="Акции">
+                        <label class="form_radio_label products__filter_control" for="aim1">Акции</label>
+                    </div>
+                    <div class="form-control">
+                        <input class="app__checkbox products__filter" id="aim2" type="radio" name="quest_aim" value="Рекомендуем">
+                        <label class="form_radio_label products__filter_control" for="aim2">Рекомендуем</label>
+                    </div>
+                    <div class="form-control">
+                        <input class="app__checkbox products__filter" id="aim3" type="radio" name="quest_aim" value="Новинка">
+                        <label class="form_radio_label products__filter_control" for="aim3">Новинка</label>
+                    </div>
+                    <div class="form-control">
+                        <input class="app__checkbox products__filter" id="aim4" type="radio" name="quest_aim" value="Хит">
+                        <label class="form_radio_label products__filter_control" for="aim4">Хит</label>
+                    </div>
+                </div>
+                <a href="" class="button button__blue button__blue_arrow products__button">Вся продукция</a>
+            </div>
+            <div class="products__slider owl-carousel owl-theme">
+                <div class="products__slide">
+                    <a href="" class="products__item">
+                        <div class="products__image">
+                            <img src="/src/img/products.jpg" alt="zov">
+                            <span class="products__price">от 31700 руб. за м.п.</span>
+                        </div>
+                        <div class="products__title">КУХНЯ ВЕРАНО</div>
+                    </a>
+                </div>
+                <div class="products__slide">
+                    <a href="" class="products__item">
+                        <div class="products__image">
+                            <img src="/src/img/products.jpg" alt="zov">
+                            <span class="products__price">от 31700 руб. за м.п.</span>
+                        </div>
+                        <div class="products__title">КУХНЯ ВЕРАНО</div>
+                    </a>
+                </div>
+            </div>
+            <div class="products__slider owl-carousel owl-theme">
+                <div class="products__slide">
+                    <a href="" class="products__item">
+                        <div class="products__image">
+                            <img src="/src/img/products.jpg" alt="zov">
+                            <span class="products__price">от 31700 руб. за м.п.</span>
+                        </div>
+                        <div class="products__title">КУХНЯ ВЕРАНО</div>
+                    </a>
+                </div>
+                <div class="products__slide">
+                    <a href="" class="products__item">
+                        <div class="products__image">
+                            <img src="/src/img/products.jpg" alt="zov">
+                            <span class="products__price">от 31700 руб. за м.п.</span>
+                        </div>
+                        <div class="products__title">КУХНЯ ВЕРАНО</div>
+                    </a>
+                </div>
+            </div>
             
+        </div>
+    </div>
+</section>
+<section class="section callback-form">
+    <div class="section__inner callback-form__inner">
+        <div class="container">
+            <h3 class="callback-form__heading">Заполните и получите <br> бесплатный дизайн-проект!</h3>
+            <form action="">
+                <div class="form__wrap">
+                    <div class="form__input"><input type="text" name="call_name" required placeholder="Имя"></div>
+                    <div class="form__input"><input type="tel" name="call_tel" required placeholder="Телефон"></div>
+                    <div class="form__input"><input type="email" name="call_email" required placeholder="E-mail"></div>
+                </div>
+                <button class="button button__white button__white_arrow callback-form__button" type="submit">Отправить</button>
+            </form>
+            
+
+        </div>
+    </div>
+</section>
+<section class="section services">
+    <div class="section__inner services__inner">
+        <div class="container">
+            <div class="section__wrap">
+                <div class="section__side">
+                    <h2 class="section__title">Наши услуги</h2>
+                    <h3 class="section__heading">Безупречный сервис для вашего комфорта</h3>
+                    <p class="section__text">Представьте, как замечательно не выбирать что-то, внутренне соглашаясь на неприятный компромисс, а получить мебель, сделанную именно для вас.
+                    </p>
+                    <p class="section__text">Наши дизайнеры разработают и спроектируют кухонный гарнитур с учетом размеров помещения.</p>
+                    <div class="section__controls">
+                        <a href="" class="button button__blue button__blue_arrow">Все услуги</a>
+                    </div>
+                </div>
+                <div class="section__side">
+                    <div class="services__items">
+                        <div class="services__item">
+                            <div class="services__image"><img src="/src/img/icons/blueprint.svg" alt="zov"></div>
+                            <a href="" class="services__button">Бесплатный <br> дизайн-проект</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image"><img src="/src/img/icons/pencil.svg" alt="zov"></div>
+                            <a href="" class="services__button">Вызов <br> замерщика</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image"><img src="/src/img/icons/package.svg" alt="zov"></div>
+                            <a href="" class="services__button">Доставка <br> и оплата</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image"><img src="/src/img/icons/insurance.svg" alt="zov"></div>
+                            <a href="" class="services__button">Защита <br> от подделки</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image"><img src="/src/img/icons/wall-clock.svg" alt="zov"></div>
+                            <a href="" class="services__button">Рассрочка</a>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image"><img src="/src/img/icons/repair-tools.svg" alt="zov"></div>
+                            <a href="" class="services__button">Сборка</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section questions">
+    <div class="section__inner questions__inner">
+        <div class="container">
+           <h3 class="section__heading section__heading_white">Ответим  <br>
+            на любые вопросы</h3>
+            <p class="section__text section__text_white questions__text">В нашем салоне «Кухни ЗОВ» вы найдете классические и современные кухни с дизайном по индивидуальному заказу. Вас ждет отличный сервис — специалисты помогут вам с замером кухни, доставкой и сборкой в квартире.</p>
+            <div class="hero__controls">
+                <a href="" class="button button__blue hero__button">Перейти в каталог</a>
+                <button class="button button__black hero__button">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="section__inner">
+        <div class="container">
+            <div class="section__wrap about__wrap">
+                <div class="section__side">
+                    <h2 class="section__title">О компании</h2>
+                    <h3 class="section__heading">Мы создаем <br> мебель для жизни</h3>
+                    <p class="section__text">Кухни ЗОВ являются белорусской мебелью, которая производится на высокотехнологичном современном оборудовании. Сегодня наши кухни все более популяризируются как в пределах страны, так и за границей. Факторы, которые влияют на повышение популярности кухонь ЗОВ:
+                    </p>
+                    <ul class="section__list">
+                        <li class="section__list_item">Отличное сочетание качества, <br> стиля и цены.</li>
+                        <li class="section__list_item">Гарантия на длительный срок эксплуатации <br> любого типа. Мы уверены в качестве!</li>
+                        <li class="section__list_item">Большой выбор материалов, которые <br> используют для производства кухонь.</li>
+                    </ul>
+                    <div class="hero__controls">
+                        <a href="" class="button button__blue hero__button">Подробности</a>
+                        <button class="button button__black">Начать сотрудничество</button>
+                    </div>
+                </div>
+                <div class="section__side">
+                    <div class="about__video"><div class="about__video_btn">СМОТРЕТЬ ВИДЕО <br>
+                        ОБ ПРОИЗВОДСТВЕ</div></div>
+                    <div class="about__modal modal-about">
+                        <div class="modal-about__inner">
+                            <div class="modal-about__content">
+                                <div class="modal-about__close"><img src="/src/img/icons/cancel.svg" alt=""></div>
+                                <iframe class="about__video_src" style="width:100%; height:80vh;" id="company_video_iframe"  data-src="https://www.youtube.com/embed/v7y8H3HD5z0?autoplay=1&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;disablekb=1&amp;iv_load_policy=3" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" style="" src="https://www.youtube.com/embed/v7y8H3HD5z0?autoplay=1&amp;enablejsapi=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;disablekb=1&amp;iv_load_policy=3"></iframe>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+<section class="section reviews">
+    <div class="section__inner reviews__inner">
+        <div class="container">
+            <div class="reviews__head">
+                <div>
+                    <h2 class="section__title">Наши услуги</h2>
+                    <h3 class="section__heading">О нас пишут</h3>
+                </div>
+                <div>
+                    <a href="" class="button button__blue button__blue_arrow">Все отзывы</a>
+                </div>
+            </div>
+            <div class="reviews__slider owl-carousel owl-theme">
+                <div class="reviews__slide">
+                    <div class="reviews__name">Анастатия Белова</div>
+                    <div class="reviews__rate" style="
+                                --rating: 4;
+                                --percent: calc(var(--rating) / 5 * 100%);"
+                                >★★★★★</div>
+                    <div class="reviews__text section__text">Мы хотели купить кухню из натуральной древесины, но с современным дизайном и не коричневую. В каталоге выбрали модель Верано с комбинированной отделкой фасадов из ольхи. Она по цвету отлично подходила к интерьеру квартиры. При разработке дизайна кухни ЗОВ выяснилось, что можно...
+                    </div>
+                    <div class="reviews__more">ЧИТАТЬ ОТЗЫВ ПОЛНОСТЬЮ</div>
+                </div>
+
+            </div> 
             
         </div>
     </div>

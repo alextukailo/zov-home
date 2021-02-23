@@ -47,4 +47,149 @@
         color: #000000;
     }
 
+    &__head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    &__filter {
+        width: fit-content;
+
+        &_wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 2.4rem;
+            margin-left: 2.4rem;
+        }
+
+        &_control {
+            width: max-content;
+            background: #FFFFFF;
+            border: 1px solid #DEDEDE;
+            padding: 1.1rem 1.8rem;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-left: .8rem;
+        }
+
+        
+    }
+
+    &__button {
+        margin-bottom: 2.4rem;
+        margin-left: auto;
+    }
+
+    &__slider {
+
+        margin-bottom: 2.4rem;
+
+        .products__image {
+            position: relative;
+            height: 17rem;
+
+            img {
+                
+            }
+
+            .products__price {
+                display: block;
+                position: absolute;
+                bottom: .7rem;
+                left: 1.2rem;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+
+    &__slider {
+        position: relative;
+        .owl-nav.disabled, .owl-dots.disabled {
+            display: block !important;
+
+            .owl-prev {
+                position: absolute;
+                top: 50%;
+                left: -2.5rem;
+                transform: translateY(-50%);
+                color: transparent;
+                transition: all .3s;
+                backdrop-filter: grayscale(70%);
+                opacity: .5;
+                filter: grayscale(50%);
+                &:hover {
+                    opacity: 1;   
+                    filter: grayscale(0);
+                }
+
+                &:after {
+                    content: url('../img/icons/blue-arrow.svg');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5rem;
+                    height: 5rem;
+                    background: var(--colorWhite);
+                    box-shadow: var(--shadow);
+                    
+                }
+            }
+
+            .owl-next {
+                position: absolute;
+                top: 50%;
+                right: -2.5rem;
+                transform: translateY(-50%);
+                color: transparent;
+                transition: all .3s;
+                opacity: .5;
+                filter: grayscale(50%);
+                &:hover {
+                    opacity: 1;   
+                    filter: grayscale(0);
+                }
+
+                &:after {
+                    content: url('../img/icons/blue-arrow.svg');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5rem;
+                    height: 5rem;
+                    background: var(--colorWhite);
+                    box-shadow: var(--shadow);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &__slide {
+        margin: .7rem 0;
+        // margin-right: 3rem;
+        box-shadow: var(--shadow);
+
+        .products__title {
+            
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            text-align: start;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            color: #000000;
+        }
+    }
+
 }

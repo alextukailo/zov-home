@@ -1,0 +1,45 @@
+.reviews {
+
+    &__head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.2rem;
+    }
+
+    &__slider {
+
+    }
+
+    &__rate {
+        --percent: calc(var(--rating) / 5 * 100%);
+      display: inline-block;
+      font-size: 15px;
+      line-height: 1;
+       letter-spacing: 3px;
+      background: linear-gradient(90deg, #fc0 var(--percent), #8899A6 var(--percent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 1rem 0;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+
+    &__more {
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.02em;
+
+        color: #1A56B0;
+    }
+
+}

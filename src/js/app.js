@@ -26,7 +26,7 @@ if($('.hero-carousel').length) {
 		margin:0,
 		nav:false,
 		smartSpeed: 700,
-		autoplayTimeout:5000,
+		autoplayTimeout:7000,
 		autoplay: true,
 		responsive:{
 			0:{
@@ -41,6 +41,63 @@ if($('.hero-carousel').length) {
 		}
 	});    		
 }
+
+if($('.products__slider').length) { 
+	$('.products__slider').owlCarousel({
+		loop:true,
+		lazyLoad : true,
+		// stagePadding: 300,
+		margin: 30,
+		nav: true,
+		smartSpeed: 700,
+		autoplayTimeout:7000,
+		autoplay: false,
+		responsive:{
+			0:{
+				items:1
+			},
+			768:{
+				items:2
+			},
+			1024:{
+				items:4
+			}
+		}
+	});    		
+}
+
+if($('.reviews__slider').length) { 
+	$('.reviews__slider').owlCarousel({
+		loop:true,
+		lazyLoad : true,
+		// stagePadding: 300,
+		margin: 30,
+		nav: true,
+		smartSpeed: 700,
+		autoplayTimeout:7000,
+		autoplay: false,
+		responsive:{
+			0:{
+				items:1
+			},
+			768:{
+				items:2
+			},
+			1024:{
+				items:2
+			}
+		}
+	});    		
+}
+
+
+$('.about__video_btn').click(function(){
+    $('.modal-about').fadeIn()
+});
+
+$('.modal-about__close').click(function(){
+    $('.modal-about').fadeOut()
+});
 
 
 // $('.nav_mobile').click(function(e){
