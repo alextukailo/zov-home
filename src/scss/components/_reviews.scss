@@ -8,8 +8,11 @@
         margin-bottom: 3.2rem;
     }
 
-    &__slider {
-
+    &__slide {
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        margin: 1rem 0;
+        padding: 3.2rem;
     }
 
     &__rate {
@@ -34,12 +37,86 @@
     }
 
     &__more {
+        display: flex;
+        align-items: center;
         font-weight: 600;
         font-size: 1.1rem;
         line-height: 1.3rem;
         letter-spacing: 0.02em;
-
         color: #1A56B0;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            display: block;
+            background: url('../img/icons/blue_arrow.svg') no-repeat;
+            width: .6rem;
+            height: 1rem;
+            background-size: contain;
+            margin-left: 1rem;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        .owl-nav.disabled, .owl-dots.disabled {
+            display: block !important;
+
+            .owl-prev {
+                position: absolute;
+                top: 50%;
+                left: -2.5rem;
+                transform: translateY(-50%);
+                color: transparent;
+                transition: all .3s;
+                backdrop-filter: grayscale(70%);
+                opacity: .5;
+                filter: grayscale(50%);
+                &:hover {
+                    opacity: 1;   
+                    filter: grayscale(0);
+                }
+
+                &:after {
+                    content: url('../img/icons/blue-arrow.svg');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5rem;
+                    height: 5rem;
+                    background: var(--colorWhite);
+                    box-shadow: var(--shadow);
+                    
+                }
+            }
+
+            .owl-next {
+                position: absolute;
+                top: 50%;
+                right: -2.5rem;
+                transform: translateY(-50%);
+                color: transparent;
+                transition: all .3s;
+                opacity: .5;
+                filter: grayscale(50%);
+                &:hover {
+                    opacity: 1;   
+                    filter: grayscale(0);
+                }
+
+                &:after {
+                    content: url('../img/icons/blue-arrow.svg');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5rem;
+                    height: 5rem;
+                    background: var(--colorWhite);
+                    box-shadow: var(--shadow);
+                    transform: rotate(180deg);
+                }
+            }
+        }
     }
 
 }

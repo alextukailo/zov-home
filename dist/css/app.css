@@ -1724,6 +1724,15 @@ h4 {
   margin-bottom: 32px;
   margin-bottom: 3.2rem; }
 
+.reviews__slide {
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+  margin: 10px 0;
+  margin: 1rem 0;
+  padding: 32px;
+  padding: 3.2rem; }
+
 .reviews__rate {
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
@@ -1747,13 +1756,114 @@ h4 {
   color: #000000; }
 
 .reviews__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 600;
   font-size: 11px;
   font-size: 1.1rem;
   line-height: 13px;
   line-height: 1.3rem;
   letter-spacing: 0.02em;
-  color: #1A56B0; }
+  color: #1A56B0;
+  cursor: pointer; }
+  .reviews__more:after {
+    content: '';
+    display: block;
+    background: url(../img/icons/blue_arrow.svg) no-repeat;
+    width: 6px;
+    width: .6rem;
+    height: 10px;
+    height: 1rem;
+    background-size: contain;
+    margin-left: 10px;
+    margin-left: 1rem; }
+
+.reviews__slider {
+  position: relative; }
+  .reviews__slider .owl-nav.disabled, .reviews__slider .owl-dots.disabled {
+    display: block !important; }
+    .reviews__slider .owl-nav.disabled .owl-prev, .reviews__slider .owl-dots.disabled .owl-prev {
+      position: absolute;
+      top: 50%;
+      left: -25px;
+      left: -2.5rem;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      color: transparent;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      -webkit-backdrop-filter: grayscale(70%);
+              backdrop-filter: grayscale(70%);
+      opacity: .5;
+      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6063000000000001 0.3576 0.0361 0 0 0.1063 0.8575999999999999 0.0361 0 0 0.1063 0.3576 0.5361 0 0 0 0 0 1 0" /></filter></svg>#filter');
+      -webkit-filter: grayscale(50%);
+              filter: grayscale(50%); }
+      .reviews__slider .owl-nav.disabled .owl-prev:hover, .reviews__slider .owl-dots.disabled .owl-prev:hover {
+        opacity: 1;
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" /></filter></svg>#filter');
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0); }
+      .reviews__slider .owl-nav.disabled .owl-prev:after, .reviews__slider .owl-dots.disabled .owl-prev:after {
+        content: url(../img/icons/blue-arrow.svg);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 50px;
+        width: 5rem;
+        height: 50px;
+        height: 5rem;
+        background: #ffffff;
+        -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, .1); }
+    .reviews__slider .owl-nav.disabled .owl-next, .reviews__slider .owl-dots.disabled .owl-next {
+      position: absolute;
+      top: 50%;
+      right: -25px;
+      right: -2.5rem;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      color: transparent;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      opacity: .5;
+      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6063000000000001 0.3576 0.0361 0 0 0.1063 0.8575999999999999 0.0361 0 0 0.1063 0.3576 0.5361 0 0 0 0 0 1 0" /></filter></svg>#filter');
+      -webkit-filter: grayscale(50%);
+              filter: grayscale(50%); }
+      .reviews__slider .owl-nav.disabled .owl-next:hover, .reviews__slider .owl-dots.disabled .owl-next:hover {
+        opacity: 1;
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" /></filter></svg>#filter');
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0); }
+      .reviews__slider .owl-nav.disabled .owl-next:after, .reviews__slider .owl-dots.disabled .owl-next:after {
+        content: url(../img/icons/blue-arrow.svg);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 50px;
+        width: 5rem;
+        height: 50px;
+        height: 5rem;
+        background: #ffffff;
+        -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
 
 
 /*# sourceMappingURL=app.css.map*/
