@@ -694,9 +694,6 @@ h4 {
   @media (max-width: 537px) {
     .button {
       width: 100%; } }
-  .button:hover {
-    -webkit-transform: translateY(-0.3rem);
-            transform: translateY(-0.3rem); }
   .button__black {
     color: #ffffff;
     background: #2C2C2C;
