@@ -1,0 +1,25 @@
+.contacts {
+
+    &__wrap {
+
+    }
+
+    &__side {
+
+    }
+
+    &__title {
+
+    }
+
+    &__side {
+
+        &:first-child {
+            width: 49%;
+            @media(--mobile-screen) {
+                width: 100%;
+            }
+        }
+    }
+
+}
