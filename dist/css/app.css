@@ -1524,6 +1524,9 @@ h4 {
 
 .products__slider {
   position: relative; }
+  @media (max-width: 537px) {
+    .products__slider:last-child {
+      display: none; } }
   .products__slider .owl-nav.disabled, .products__slider .owl-dots.disabled {
     display: block !important; }
     .products__slider .owl-nav.disabled .owl-prev, .products__slider .owl-dots.disabled .owl-prev {

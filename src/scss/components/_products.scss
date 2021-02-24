@@ -136,6 +136,13 @@
 
     &__slider {
         position: relative;
+
+        &:last-child {
+            @media(--mobile-screen) {
+                display: none;
+            }
+        }
+
         .owl-nav.disabled, .owl-dots.disabled {
             display: block !important;
 
