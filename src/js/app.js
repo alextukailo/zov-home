@@ -109,6 +109,12 @@ $('.modal-about__close').click(function(){
     $('.modal-about').fadeOut()
 });
 
+let currentYear = () => {
+    let today = new Date();
+    let year = today.getFullYear();
+    document.getElementById("yearVal").innerHTML = year
+}
+currentYear()
 
 // $('.nav_mobile').click(function(e){
 //     e.preventDefault();

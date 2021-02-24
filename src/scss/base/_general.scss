@@ -348,7 +348,8 @@
       }
 
       @media(--mobile-screen) {
-       
+        font-size: 26px;
+        line-height: 120%;
       }
       
     }
@@ -398,6 +399,10 @@
       text-transform: uppercase;
       color: #818181;
       margin-bottom: 1rem;
+      @media(--mobile-screen) {
+        font-size: 12px;
+        line-height: 14px;
+       }
     }
 
     &__wrap {
@@ -408,7 +413,9 @@
 
     &__side {
       width: 44%;
-
+      @media(--mobile-screen) {
+       width: 100%;
+      }
       &:last-child {
         width: 49%;
         @media(--mobile-screen) {
@@ -428,6 +435,10 @@
       display: block;
       width: 48%;
       text-align: center;
+      @media(--mobile-screen) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
     }
 
   }
@@ -516,6 +527,8 @@
       @media(--mobile-screen) {
        width: 100%;
        margin-bottom: 2rem;
+       font-size: 14px;
+        line-height: 120%;
     }
 
       &:after {
@@ -527,6 +540,7 @@
         background-size: contain;
         padding: 4.8rem 2rem;
         margin-left: 4rem;
+        
       }
     }
 
@@ -541,6 +555,10 @@
         background-size: contain;
         padding: 2.5rem;
         margin-right: 2rem;
+        @media(--mobile-screen) {
+          width: 6rem;
+          height: 6rem;
+        }
       }
     }
 
@@ -611,7 +629,12 @@
     color: #1A56B0;
     cursor: pointer;
     -webkit-box-shadow: 4px 4px 16px rgba(0, 0, 0, .15);
-            box-shadow: 4px 4px 16px rgba(0, 0, 0, .15); }
+            box-shadow: 4px 4px 16px rgba(0, 0, 0, .15); 
+
+            @media(--mobile-screen) {
+              
+          }
+  }
   
   .app__checkbox + label:before {
     display: none; }

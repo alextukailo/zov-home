@@ -7,6 +7,10 @@
 
     &__slide {
         padding: 10rem 0;
+        @media(--mobile-screen) {
+            padding-top: 15rem;
+            padding-bottom: 1.6rem;
+           }
     }
 
     &__heading {
@@ -17,12 +21,23 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 2.2rem;
+        @media(--mobile-screen) {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+           }
 
         span {
             font-size: 9.6rem;
             line-height: 11.3rem;
             letter-spacing: 0.02em;
             font-feature-settings: 'pnum' on, 'lnum' on; 
+            @media(--mobile-screen) {
+               font-size: 6.4rem;
+              }
         }
     }
    
@@ -34,6 +49,11 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FFFFFF;
         margin-bottom: 6rem;
+        @media(--mobile-screen) {
+            font-size: 1.6rem;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+        }
     }
 
     &__controls {
@@ -47,7 +67,11 @@
        max-width: 19.7rem;
        text-align: center; 
        margin-right: 3rem;
-
+       @media(--mobile-screen) {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+       }
        &:last-child {
         margin-right: 0;
        }
