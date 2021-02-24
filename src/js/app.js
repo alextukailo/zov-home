@@ -90,6 +90,16 @@ if($('.reviews__slider').length) {
 	});    		
 }
 
+$('.contacts__city').click(function(){
+	$(this).next().slideToggle()
+	$(this).toggleClass('opened')
+});
+
+$('.location__head').click(function(){
+	$(this).next().slideToggle()
+	$(this).toggleClass('opened')
+});
+
 
 $('.about__video_btn').click(function(){
     $('.modal-about').fadeIn()

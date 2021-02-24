@@ -460,25 +460,93 @@
         <div class="container">
             <h3 class="section__heading">Контакты</h3>
             <div class="section__wrap contacts__wrap">
-                <div class="contacts__side section__side">
-                    <div id="map" style="width: 100%; height: 672px; border: 1px solid black;"></div>
+                <div class="contacts__side">
+                    <div class="contacts__map" id="map" style="width: 100%; height: 672px;"></div>
                 </div>
-                <div class="contacts__side section__side">
+                <div class="contacts__side">
                     <div class="contacts__title">Адреса магазинов</div>
                     <div class="contacts__wrap">
+                        <!-- город -->
                         <div class="contacts__city">Москва</div>
-                        <div class="contacts__block location">
-                            <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
-                            <div class="location__info">
-                                <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
-                                <div class="location__place">
-                                    <div class="location__metro"></div>
-                                    <div class="location__timetable"></div>
+                        <div class="contacts__shops" style="display: none;">
+                            <div class="contacts__block location">
+                                <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
+                                <div class="location__info" style="display: none;">
+                                    <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
+                                    <div class="location__place">
+                                        <div class="location__metro">Полежаевская</div>
+                                        <div class="location__timetable">ПН-ПТ  10:00-18:00 <br> СБ-ВС 10:00-16:00</div>
+                                    </div>
+                                    <button class="button button__blue button__blue_arrow location__map">Показать на карте</button>
                                 </div>
-                                <button class="button button__blue button__blue_arrow map">Показать на карте</button>
+                            </div>
+                            <div class="contacts__block location">
+                                <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
+                                <div class="location__info" style="display: none;">
+                                    <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
+                                    <div class="location__place">
+                                        <div class="location__metro">Полежаевская</div>
+                                        <div class="location__timetable">ПН-ПТ  10:00-18:00 <br> СБ-ВС 10:00-16:00</div>
+                                    </div>
+                                    <button class="button button__blue button__blue_arrow location__map">Показать на карте</button>
+                                </div>
                             </div>
                         </div>
+                        <!-- город -->
+                        <div class="contacts__city">Ногинск</div>
+                        <div class="contacts__shops" style="display: none;">
+                            <div class="contacts__block location">
+                                <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
+                                <div class="location__info" style="display: none;">
+                                    <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
+                                    <div class="location__place">
+                                        <div class="location__metro">Полежаевская</div>
+                                        <div class="location__timetable">ПН-ПТ  10:00-18:00 <br> СБ-ВС 10:00-16:00</div>
+                                    </div>
+                                    <button class="button button__blue button__blue_arrow location__map">Показать на карте</button>
+                                </div>
+                            </div>
+                            <div class="contacts__block location">
+                                <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
+                                <div class="location__info" style="display: none;">
+                                    <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
+                                    <div class="location__place">
+                                        <div class="location__metro">Полежаевская</div>
+                                        <div class="location__timetable">ПН-ПТ  10:00-18:00 <br> СБ-ВС 10:00-16:00</div>
+                                    </div>
+                                    <button class="button button__blue button__blue_arrow location__map">Показать на карте</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- город -->
+                        <div class="contacts__city">Королев</div>
+                        <div class="contacts__shops" style="display: none;">
+                            <div class="contacts__block location">
+                                <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
+                                <div class="location__info" style="display: none;">
+                                    <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
+                                    <div class="location__place">
+                                        <div class="location__metro">Полежаевская</div>
+                                        <div class="location__timetable">ПН-ПТ  10:00-18:00 <br> СБ-ВС 10:00-16:00</div>
+                                    </div>
+                                    <button class="button button__blue button__blue_arrow location__map">Показать на карте</button>
+                                </div>
+                            </div>
+                            <div class="contacts__block location">
+                                <div class="location__head">г, Москва, проспект Маршала Жукова, 59</div>
+                                <div class="location__info" style="display: none;">
+                                    <div class="location__image"><img src="./src/img/contacts.jpg" alt="zov"></div>
+                                    <div class="location__place">
+                                        <div class="location__metro">Полежаевская</div>
+                                        <div class="location__timetable">ПН-ПТ  10:00-18:00 <br> СБ-ВС 10:00-16:00</div>
+                                    </div>
+                                    <button class="button button__blue button__blue_arrow location__map">Показать на карте</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- город -->
                     </div>
+                    
                 </div>
             </div>
             
@@ -486,6 +554,90 @@
         </div>
     </div>
 </section>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__block">
+                    <a href="" class="footer__item lg">Услуги</a>
+                    <a href="" class="footer__item">Защита от подделки</a>
+                    <a href="" class="footer__item">Бесплатный дизайн-проект</a>
+                    <a href="" class="footer__item">Вызов замерщика</a>
+                    <a href="" class="footer__item">Доставка и оплата</a>
+                    <a href="" class="footer__item">Рассрочка</a>
+                    <a href="" class="footer__item">Вызов дизайнера</a>
+                    <a href="" class="footer__item">Гарантия</a>
+                    <a href="" class="footer__item">Сборка</a>
+                </div>
+                <div class="footer__block">
+                    <a href="" class="footer__item lg">Продукция</a>
+                    <a href="" class="footer__item">Кухни</a>
+                    <a href="" class="footer__item">Корпусная мебель</a>
+                    <a href="" class="footer__item">Столы и стулья</a>
+                    <a href="" class="footer__item">Комплектующие</a>
+                    <a href="" class="footer__item">Межкомнатные двери</a>
+                    <a href="" class="footer__item">Мебель для детской</a>
+                    <a href="" class="footer__item">Бытовая техника</a>
+                    <a href="" class="footer__item">Ванные комнаты</a>
+                    <a href="" class="footer__item">Распродажа</a>
+                </div>
+                <div class="footer__block">
+                    <a href="" class="footer__item lg">Компании</a>
+                    <a href="" class="footer__item">О фабрике - производство</a>
+                    <a href="" class="footer__item">О компании</a>
+                    <a href="" class="footer__item">Партнеры</a>
+                    <a href="" class="footer__item">Сертификаты</a>
+                    <a href="" class="footer__item">Партнерская программа</a>
+                    <a href="" class="footer__item">Вопрос-ответ</a>
+                    <a href="" class="footer__item">Отзывы</a>
+                    <a href="" class="footer__item">Статьи</a>
+                </div>
+                <div class="footer__block">
+                    <button class="button button__black footer__button">ПОДПИШИТЕСЬ НА РАССЫЛКУ</button>
+                    <div class="footer__box ordercall">
+                        <a href="tel:88005558224">8 800 555 82 24</a>
+                        <p class="order">Заказать звонок</p>
+                    </div>
+                    <a href="mailto:info@zov-home.ru" class="footer__info mail">info@zov-home.ru</a>
+                    <p class="footer__info address">г.Москва, Каширсоке шоссе, д. 19, к. 2, ТК “Каширский двор”</p>
+                    <div class="footer__social">
+                        <a href=""><img src="./src/img/icons/telegram-dark.svg" alt="zov" class="footer__social_item"></a>
+                        <a href=""><img src="./src/img/icons/instagram-dark.svg" alt="zov" class="footer__social_item"></a>
+                        <a href=""><img src="./src/img/icons/facebook-dark.svg" alt="zov" class="footer__social_item"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content">
+                <div class="footer__block">
+                    <a href="" class="footer__item lg">Проекты</a>
+                </div>
+                <div class="footer__block">
+                    <a href="" class="footer__item lg">Новости</a>
+                </div>
+                <div class="footer__block">
+                    <a href="" class="footer__item lg">Контакты</a>
+                </div>
+                <div class="footer__block">
+                    
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="javascript:window.print();" class="footer__bottom_item">Версия для печати</a>
+                <a href="" class="footer__bottom_item">Пользовательское соглашение</a>
+                <a href="" class="footer__bottom_item">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__content">
+                <img src="./src/img/icons/zov-logo.svg" alt="zov">
+                <p class="copyright__item">Кухонная фабрика “ЗОВ”.</p>
+                <p class="copyright__item">© <span id="currentYear">2021</span> Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- <section class="section">
     <div class="section__inner">
         <div class="container">

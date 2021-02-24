@@ -9,17 +9,197 @@
     }
 
     &__title {
-
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #1D1D1D;
+        margin-bottom: 3.2rem;
     }
 
     &__side {
-
+        width: 43%;
+        @media(--mobile-screen) {
+            width: 100%;
+        }
         &:first-child {
-            width: 49%;
+            width: 55%;
             @media(--mobile-screen) {
                 width: 100%;
             }
         }
+
     }
 
+    &__map {
+        box-shadow: var(--shadow);
+    }
+
+    &__city {
+        position: relative;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #1D1D1D;
+        padding: 1.6rem 0;
+        border-bottom: .1rem solid #BABABA;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: url('../img/icons/blue_arrow_down.svg') no-repeat;
+            background-size: contain;
+            width: 1.5rem;
+            height: 1.1rem;
+            transition: all .3s;
+        }
+    }
+
+    &__shops {
+        
+    }
+
+    .location {
+        padding: 1.6rem 0;
+        border-bottom: .1rem solid #BABABA;
+
+        &__head {
+            position: relative;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #3F3F3F;
+            cursor: pointer;
+            transition: all .3s;
+            
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background: url('../img/icons/blue_arrow_down.svg') no-repeat;
+                background-size: contain;
+                width: 1.5rem;
+                height: 1.1rem;
+                transition: all .3s;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1.6rem;
+        }
+
+        &__image {
+            max-width: 25.4rem;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 12.2rem;
+                object-fit: cover;
+            }
+        }
+
+        &__place {
+
+        }
+
+        &__metro {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url('../img/icons/metro.svg') no-repeat;
+                background-size: contain;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 1.2rem;
+            }
+        }
+
+        &__timetable {
+            display: flex;
+            align-items: baseline;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000000;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url('../img/icons/clock.svg') no-repeat;
+                background-size: contain;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 1.2rem;
+            }
+        }
+
+        &__map {
+            position: relative;
+            margin-top: 4rem;
+            width: 100%;
+            text-align: center;
+            padding-left: 40%;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 35%;
+                display: block;
+                background: url('../img/icons/map-pin.svg');
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+
+    }
+}
+
+.opened.location__head, .opened.contacts__city {
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotate(180deg);
+        background: url('../img/icons/blue_arrow_down.svg') no-repeat;
+        background-size: contain;
+        width: 1.5rem;
+        height: 1.1rem;
+    }
+}
+
+.opened.contacts__city {
+    border: none;
 }

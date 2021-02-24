@@ -1,9 +1,9 @@
 .footer {
 
     &__inner {
-        padding: 6rem 0 3rem 0 ;
-        
-        background-size: cover;
+        padding: 6.4rem 0 3rem 0 ;
+        background: #2C2C2C;
+       
     }
 
    &__content {
@@ -11,12 +11,189 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
-       margin-bottom: 7rem;
        @media(--mobile-screen) {
-            margin-bottom: 4rem;
         }
    } 
 
-   
+   &__block {
+       max-width: 25.5rem;
+       width: 100%;
+       margin-bottom: 2.4rem;
+   }
 
+   &__item {
+       display: block;
+       font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #BABABA;
+        margin-bottom: 1.2rem;
+   }
+
+   &__button {
+       width: 100%;
+       margin-bottom: 3.2rem;
+   }
+
+   &__info {
+       display: block;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        margin-bottom: 1.4rem;
+        color: #FFFFFF;
+        padding: 1rem 0 1.4rem 0;
+        border-bottom: 1px solid #BABABA;
+
+        &:last-child {
+            border: none;
+        }
+
+        &.mail {
+            display: flex;
+            align-items: center;
+
+            &:before {
+                content: '';
+                display: table;
+                background: url('../img/icons/mail.svg') no-repeat;
+                background-size: contain;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 1rem;
+            }
+        }
+
+        &.address {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.4rem;
+
+            &:before {
+                content: '';
+                display: table;
+                background: url('../img/icons/map-pin.svg') no-repeat;
+                background-size: contain;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 1rem;
+            }
+        }
+   }
+
+   &__box {
+
+    &.ordercall {
+        display: flex;
+        position: relative;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #BABABA;
+        a, p {
+            width: 100%;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FFFFFF;
+        }
+
+        p {
+            position: absolute;
+            bottom: 1.2rem;
+            left: 3.4rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #BABABA;
+            
+        }
+
+        &:before {
+            content: '';
+            display: table;
+            background: url('../img/icons/phone.svg') no-repeat;
+            background-size: contain;
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1rem;
+        }
+    }
+
+    
+
+   }
+   
+   .lg.footer__item {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+        margin-bottom: 2.4rem;
+   } 
+
+   &__social {
+    display: flex;
+
+    &_item {
+        display: block;
+        margin-right: 1rem;
+    }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+
+        &_item {
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #BABABA;
+            margin-left: 2.2rem;
+        }
+    }
+
+}
+
+.copyright {
+
+    background: #181818;
+    padding: 1.4rem 0;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        img {
+            max-width: 3.5rem;
+            margin-right: 4rem;
+        }
+    }
+
+    &__item {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        margin-right: 4rem;
+        color: #FFFFFF;
+    }
 }
