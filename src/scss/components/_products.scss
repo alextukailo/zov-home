@@ -5,7 +5,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         @media(--mobile-screen) {
-            margin-top: 5rem;
+            margin-top: 0rem;
            }
     }
 
@@ -15,6 +15,10 @@
         margin-bottom: 1.5rem;
         @media(--mobile-screen) {
             width: 48%;
+           }
+
+           &.catalog {
+               width: 31%;
            }
     }
 
@@ -249,4 +253,27 @@
         }
     }
 
+}
+
+.products__image {
+    position: relative;
+    height: 17rem;
+
+    img {
+        
+    }
+
+    .products__price {
+        display: block;
+        position: absolute;
+        bottom: .7rem;
+        left: 1.2rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+    }
 }

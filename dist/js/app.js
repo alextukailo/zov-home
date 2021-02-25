@@ -283,6 +283,11 @@ $('.location__head').click(function(){
 	$(this).toggleClass('opened')
 });
 
+$('.sidebar__head').click(function(){
+	$(this).next().slideToggle()
+	$(this).toggleClass('opened')
+});
+
 if(window.innerWidth <= 537) {
 	$('.footer__item.lg').click(function(){
 		$(this).next().slideToggle()
@@ -323,6 +328,52 @@ let reviewsTextLimit = () => {
 }
 // reviewsTextLimit()
 
+
+var selectComponent = function selectComponent() {
+	jQuery(function ($) {
+	  $('.select').on('click', '.select__head', function () {
+		if ($(this).hasClass('open')) {
+		  $(this).removeClass('open');
+		  $(this).next().fadeOut();
+		} else {
+		  $('.select__head').removeClass('open');
+		  $('.select__list').fadeOut();
+		  $(this).addClass('open');
+		  $(this).next().fadeIn();
+		}
+	  });
+	  $('.select').on('click', '.select__item', function () {
+		$('.select__head').removeClass('open');
+		$(this).parent().fadeOut();
+		$(this).parent().prev().text($(this).text());
+		$(this).parent().prev().prev().val($(this).data("value"));
+	  });
+	  $('.select').on('click', '.select__value', function () {
+		var _this = this;
+  
+		var data = function data() {
+		  $(_this).parent().prev().text($(_this).val());
+		  $(_this).parent().prev().prev().val($(_this).val());
+		};
+  
+		$('.apply-btn').click(function () {
+		  data();
+		});
+	  });
+	  $('.select').on('input', '.select__value', function () {
+		$(this).parent().prev().text($(this).val());
+		$(this).parent().prev().prev().val($(this).val());
+	  });
+	  $(document).click(function (e) {
+		if (!$(e.target).closest('.select').length) {
+		  $('.select__head').removeClass('open');
+		  $('.select__list').fadeOut();
+		}
+	  });
+	});
+  };
+  
+  selectComponent();
   
   $('.nav-mobile__button').click(function(){
     $('.nav-mobile__menu').fadeIn();

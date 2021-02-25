@@ -113,3 +113,27 @@
         margin-left: 2.7rem;
     }
 }
+
+.button__black_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 5.5rem;
+    @media(--mobile-screen) {
+        width: 100%;
+        padding-left: 35%;
+    }
+
+    &:after {
+        content: url('../img/icons/white_arrow.svg');
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        width: 4.8rem;
+        height: 4.8rem;
+        background: #1D1D1D;
+        margin-left: 2.7rem;
+    }
+}
