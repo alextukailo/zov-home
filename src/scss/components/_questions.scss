@@ -3,6 +3,14 @@
     &__inner {
         background: url('../img/backgrounds/questions.jpg') no-repeat;
         background-size: cover;
+
+        @media(--mobile-screen) {
+            background: url('../img/backgrounds/questions_mobile.jpg') no-repeat;
+            background-size: contain;
+            background-color: #2C2C2C;
+            padding-top: 20rem;
+            padding-bottom: 5rem;
+           }
     }
 
     &__text {

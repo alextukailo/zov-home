@@ -17,20 +17,36 @@
         width: 100%;
     }
 
-    // &:hover {
-    //     transform: translateY(-0.3rem);
-    // }
-
     &__black {
         color: var(--colorWhite);
         background: var(--colorBlack);
         border: .2rem solid #484848;
     }
 
+    &__gray {
+        color: var(--colorWhite);
+        background: #3F3F3F;
+        border: 2px solid #484848;
+    }
+
     &__blue {
         color: var(--colorWhite);
         background: var(--colorBlue);
         border: .2rem solid var(--colorBlue);
+
+        &_wrap {
+            @media(--mobile-screen) {
+                display: none;
+            }
+
+            &.mobile {
+                display: none;
+                @media(--mobile-screen) {
+                    display: block;
+                    margin-top: 3rem;
+                }
+            }
+        }
     }
 
     &__white {
@@ -57,12 +73,16 @@
      box-sizing: border-box;
      padding: 0;
      padding-left: 5.5rem;
+     @media(--mobile-screen) {
+        width: 100%;
+        padding-left: 35%;
+    }
 
      &:after {
          content: url('../img/icons/white_arrow.svg');
          display: flex;
-        justify-content: center;
-        align-items: center;
+         justify-content: center;
+         align-items: center;
          width: 4.8rem;
          height: 4.8rem;
          background: #254D8A;
@@ -77,6 +97,10 @@
     box-sizing: border-box;
     padding: 0;
     padding-left: 5.5rem;
+    @media(--mobile-screen) {
+        width: 100%;
+        padding-left: 35%;
+    }
 
     &:after {
         content: url('../img/icons/black_arrow.svg');

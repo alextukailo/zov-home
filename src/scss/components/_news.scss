@@ -13,6 +13,7 @@
         box-shadow: var(--shadow);
         @media(--mobile-screen) {
             width: 100%;
+            margin-bottom: 2rem;
         }
     }
 

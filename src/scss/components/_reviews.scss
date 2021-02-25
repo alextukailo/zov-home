@@ -59,8 +59,12 @@
 
     &__slider {
         position: relative;
-        .owl-nav.disabled, .owl-dots.disabled {
+        .owl-nav, .owl-dots {
             display: block !important;
+
+            @media(--mobile-screen) {
+                display: none !important;
+            }
 
             .owl-prev {
                 position: absolute;

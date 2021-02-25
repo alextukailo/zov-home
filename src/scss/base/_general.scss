@@ -332,6 +332,10 @@
 
     &__inner {
       padding: 10rem 0;
+
+      @media(--mobile-screen) {
+        padding: 4.5rem 0;
+      }
     }
 
     &__heading {
@@ -415,11 +419,13 @@
       width: 44%;
       @media(--mobile-screen) {
        width: 100%;
+       margin-bottom: 6.4rem;
       }
       &:last-child {
         width: 49%;
         @media(--mobile-screen) {
           width: 100%;
+          margin-bottom: 0;
         }
       }
     }
@@ -689,7 +695,11 @@
 
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @media(--mobile-screen) {
+
+    }
   }
 
   &__input {

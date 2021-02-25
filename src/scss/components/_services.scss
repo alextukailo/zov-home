@@ -9,6 +9,10 @@
     &__item {
         width: 30%;
         margin-bottom: 2.4rem;
+        @media(--mobile-screen) {
+            width: 47%;
+            // margin-bottom: 6.4rem;
+           }
     }
 
     &__image {

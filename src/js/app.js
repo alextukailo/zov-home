@@ -100,6 +100,13 @@ $('.location__head').click(function(){
 	$(this).toggleClass('opened')
 });
 
+if(window.innerWidth <= 537) {
+	$('.footer__item.lg').click(function(){
+		$(this).next().slideToggle()
+		$(this).toggleClass('opened')
+	});
+}
+
 
 $('.about__video_btn').click(function(){
     $('.modal-about').fadeIn()
@@ -115,6 +122,25 @@ let currentYear = () => {
     document.getElementById("yearVal").innerHTML = year
 }
 currentYear()
+
+let reviewsTextLimit = () => {
+	let text = document.getElementsByClassName('reviews__text'),
+	btns = $('.reviews__more')
+
+	text = [].slice.call(text)
+	btns = [].slice.call(btns)
+	text.map(item => {
+		item.innerText = item.innerText.slice(0,270) + '...'
+		
+		// btns.map(btn => {
+		// 	btn.onclick = () => {
+		// 		item.innerText = item.innerText.slice(0,280)
+		// 	}
+		// })
+	})
+}
+// reviewsTextLimit()
+
 
 // $('.nav_mobile').click(function(e){
 //     e.preventDefault();

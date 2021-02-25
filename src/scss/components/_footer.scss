@@ -3,7 +3,9 @@
     &__inner {
         padding: 6.4rem 0 3rem 0 ;
         background: #2C2C2C;
-       
+        @media(--mobile-screen) {
+            padding: 4.5rem 0;
+        }
     }
 
    &__content {
@@ -12,13 +14,41 @@
        flex-wrap: wrap;
        justify-content: space-between;
        @media(--mobile-screen) {
-        }
+        flex-direction: column-reverse;
+     }
    } 
+
+   &__cont {
+        display: block;
+
+        @media(--mobile-screen) {
+            display: none;
+        }
+    }
 
    &__block {
        max-width: 25.5rem;
        width: 100%;
        margin-bottom: 2.4rem;
+
+       @media(--mobile-screen) {
+            max-width: 100%;
+            margin-bottom: 0;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #818181;
+        }
+
+        &:last-child {
+            @media(--mobile-screen) {
+               border: none;
+            }
+        }
+
+        &.ghost {
+            @media(--mobile-screen) {
+                display: none;
+             }
+        }
    }
 
    &__item {
@@ -29,6 +59,51 @@
         letter-spacing: 0.02em;
         color: #BABABA;
         margin-bottom: 1.2rem;
+
+        &.lg {
+            position: relative;
+            width: 100%;
+            @media(--mobile-screen) {
+                margin-bottom: 0 !important;
+                transition: all .3s;
+            }
+
+            &:after {
+                @media(--mobile-screen) {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    background: url('../img/icons/white_arrow_down.svg') no-repeat;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    background-size: contain;
+                }
+            }
+
+            &.opened {
+                @media(--mobile-screen) {
+                    margin-bottom: 2rem !important  ;
+                }
+
+                &:after {
+                    @media(--mobile-screen) {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%) rotate(180deg);
+                        background: url('../img/icons/white_arrow_down.svg') no-repeat;
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
    }
 
    &__button {
@@ -142,20 +217,31 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #FFFFFF;
         margin-bottom: 2.4rem;
+
+        @media(--mobile-screen) {
+            font-size: 1.6rem;
+        }
    } 
 
    &__social {
     display: flex;
 
-    &_item {
-        display: block;
-        margin-right: 1rem;
-    }
+        &_item {
+            display: block;
+            margin-right: 1rem;
+        }
     }
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-end;
+
+        @media(--mobile-screen) {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 2.5rem;
+        }
 
         &_item {
             font-weight: 600;
@@ -166,6 +252,26 @@
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: #BABABA;
             margin-left: 2.2rem;
+
+            @media(--mobile-screen) {
+                display: block;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                text-transform: none;
+                color: #BABABA;
+                margin-left: 0;
+                margin-bottom: 1.6rem;
+            }
+
+            &:last-child {
+
+                @media(--mobile-screen) {
+                   margin-bottom: 0;
+                }
+            }
         }
     }
 
@@ -180,9 +286,17 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        @media(--mobile-screen) {
+           position: relative;
+        }
         img {
             max-width: 3.5rem;
             margin-right: 4rem;
+            @media(--mobile-screen) {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+             }
         }
     }
 
@@ -195,5 +309,17 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         margin-right: 4rem;
         color: #FFFFFF;
+
+        &:last-child {
+            @media(--mobile-screen) {
+                margin-bottom: 0;
+             }
+        }
+
+        @media(--mobile-screen) {
+           width: 100%;
+           margin-bottom: .5rem;
+           margin-left: 5rem;
+        }
     }
 }

@@ -3,6 +3,12 @@
     &__inner {
         background: #2C2C2C;
         padding: 5rem 0;
+
+       &_main {
+        @media(--mobile-screen) {
+            padding: 5rem 0;
+        }
+       }
     }
 
     &__items {
@@ -65,6 +71,9 @@
         width: 100%;
         height: 32rem;
         background: url('../img/backgrounds/video.jpg');
+        @media(--mobile-screen) {
+            height: 21rem;
+        }
         
         &_btn {
             display: flex;
@@ -80,6 +89,11 @@
             color: #FFFFFF;
             cursor: pointer;
             opacity: .8;
+
+            @media(--mobile-screen) {
+                font-size: 1.1rem;
+                opacity: 1;
+            }
 
             &:hover {
                 opacity: 1;
