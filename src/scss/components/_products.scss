@@ -202,13 +202,13 @@
                 transition: all .3s;
                 opacity: .5;
                 filter: grayscale(50%);
-                opacity: 1;
 
                 @media(--mobile-screen) {
                     top: auto;
                     bottom: -10.6rem;
                     right: 0rem;
                     filter: grayscale(0);
+                    opacity: 1;
                 }
                 &:hover {
                     opacity: 1;   

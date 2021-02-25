@@ -290,7 +290,6 @@ if(window.innerWidth <= 537) {
 	});
 }
 
-
 $('.about__video_btn').click(function(){
     $('.modal-about').fadeIn()
 });
@@ -324,34 +323,30 @@ let reviewsTextLimit = () => {
 }
 // reviewsTextLimit()
 
-
-// $('.nav_mobile').click(function(e){
-//     e.preventDefault();
-//     $(this).toggleClass('open');
-//     $('.nav_mobilelist').slideToggle();
-//   });
   
-//   $('#nav_mobile').click(function(){
-//     $('.nav_mobile').toggleClass('open');
-//     $('.nav_mobilelist').slideToggle();
-//   });
+  $('.nav-mobile__button').click(function(){
+    $('.nav-mobile__menu').fadeIn();
+  });
+  $('.nav-mobile__close').click(function(){
+    $('.nav-mobile__menu').fadeOut();
+  });
 
   
-// 	let nav = () => {
+	let nav = () => {
 	    
-// 	    let navItem = document.getElementsByClassName('nav__item')
-// 	    let mobileWrap = document.getElementById('nav_mobile')
-// 	    let navArr = Array.from(navItem)
-// 	    let mobileNav = navArr.map((nav) => {
-// 	        let id = nav.children[0].href
+	    let navItem = document.getElementsByClassName('nav__link')
+	    let mobileWrap = document.getElementById('nav-mobile_menu')
+	    let navArr = [].slice.call(navItem)
+	    let mobileNav = navArr.map((nav) => {
+	        let id = nav.href
 	        
-// 	        return '<a class="nav_mobile-menu-item" href="' + id + '">' + nav.innerText + '</a>'
-// 	    })
+	        return '<a class="nav-mobile__menu_item" href="' + id + '">' + nav.innerText + '</a>'
+	    })
 	    
-// 	    mobileWrap.innerHTML = mobileNav.join(' ')
-// 	}
+	    mobileWrap.innerHTML = mobileNav.join(' ')
+	}
 	
-//     nav()
+    nav()
 
     
 
