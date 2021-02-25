@@ -976,6 +976,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 1.2rem;
   color: #5c6873 !important; }
 
+.filter__items {
+  height: 140px;
+  height: 14rem;
+  overflow: hidden; }
+  .filter__items.full {
+    height: auto; }
+
 .filter__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1047,6 +1054,48 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   overflow-y: scroll; }
   .filter__choises::-webkit-scrollbar {
     display: none; }
+
+.filter_more {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #1A56B0;
+  cursor: pointer; }
+  .filter_more:after {
+    content: '';
+    display: block;
+    background: url(../img/icons/black_arrow.svg) no-repeat;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 10px;
+    width: 1rem;
+    height: 14px;
+    height: 1.4rem;
+    background-size: contain;
+    margin-left: 8px;
+    margin-left: .8rem; }
+  .filter_more.full:after {
+    content: '';
+    display: block;
+    background: url(../img/icons/black_arrow.svg) no-repeat;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    width: 10px;
+    width: 1rem;
+    height: 14px;
+    height: 1.4rem;
+    background-size: contain;
+    margin-left: 8px;
+    margin-left: .8rem; }
 
 .checkbox {
   position: absolute;

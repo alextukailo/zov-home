@@ -397,7 +397,15 @@ var selectComponent = function selectComponent() {
 	    mobileWrap.innerHTML = mobileNav.join(' ')
 	}
 	
-    nav()
+	nav()
+	
+	
+	$('.filter_more').click(function(){
+		let text = $(this).text()
+		$(this).toggleClass('full')
+		$('.filter__items').toggleClass('full')
+		$(this).text(text == "Показать все" ? "Скрыть" : "Показать все")
+	  });
 
     
 
