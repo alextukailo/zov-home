@@ -459,8 +459,8 @@ var selectComponent = function selectComponent() {
 				oldC = ['button__black', 'button__black_arrow']
 			
 			let button = document.getElementById('filter_submit')
-			button.classList.remove(...newC)
-			button.classList.add(...oldC)
+			button.classList.add(...newC)
+			button.classList.remove(...oldC)
 		}
 	   //document.getElementById('filter_res').innerHTML = writeResult.join(' ')
 		// console.log(checkboxes)
