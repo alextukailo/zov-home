@@ -396,18 +396,35 @@ var selectComponent = function selectComponent() {
 	    
 	    mobileWrap.innerHTML = mobileNav.join(' ')
 	}
-	
 	nav()
 	
+
+	let displayMoreBtn = () => {
+		let selectLists = document.getElementsByClassName('select__list')
+		selectLists = [].slice.call(selectLists)
+
+		selectLists.map(selectList => {
+			if (selectList.children[0].children.length < 2) {
+				selectList.children[0].classList.remove("full")
+				selectList.children[0].children[0].style.marginBottom = "0"
+				selectList.children[1].hidden = true
+			}
+		})
+	}
+	displayMoreBtn()
 	
 	$('.filter_more').click(function(){
 		let text = $(this).text()
 		$(this).toggleClass('full')
-		$('.filter__items').toggleClass('full')
+		$(this).prev().toggleClass('full')
 		$(this).text(text == "Показать все" ? "Скрыть" : "Показать все")
-	  });
+	});
 
-    
+    document.querySelectorAll('.input_number').forEach(function (el) {
+		el.addEventListener('input', function () {
+			this.value = this.value.replace(/[^\d]/g, '');
+		});
+	});
 
 /***/ }),
 
