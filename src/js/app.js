@@ -242,8 +242,45 @@ var selectComponent = function selectComponent() {
 		$(this).next().slideToggle()
 	});
 
+	if(window.innerWidth <= 537) {
+		$('.filter-mobile').click(function(){
+			$('.filter__content').fadeToggle()
+			$(this).toggleClass('opened')
+		});
+	}
+
     document.querySelectorAll('.input_number').forEach(function (el) {
 		el.addEventListener('input', function () {
 			this.value = this.value.replace(/[^\d]/g, '');
 		});
 	});
+
+	let displayCheckedFilter = () => {
+		let checkboxes = document.getElementsByClassName('checkbox')
+		checkboxes = [].slice.call(checkboxes)
+
+		let writeResult = checkboxes.map(checkbox => {
+			let value = checkbox.value
+			
+			if (!checkbox.checked) {
+					checkbox.nextElementSibling.addEventListener("click", function() {
+						console.log(value)
+						return '<div class="filter__item">'+ value +'<span class="filter_close" >×</span></div>'
+					})
+			} 
+				
+		})
+		
+		if(window.innerWidth <= 537) {
+			let button = document.getElementById('filter_submit')
+			button.classList.remove("button__black")
+			button.classList.remove("button__black_arrow")
+			button.classList.add("button__blue")
+			button.classList.add("button__blue_arrow")
+			
+		}
+	   //document.getElementById('filter_res').innerHTML = writeResult.join(' ')
+		// console.log(checkboxes)
+	}
+	displayCheckedFilter()
+

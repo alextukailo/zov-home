@@ -94,6 +94,7 @@
                 </div>
                 <h1 class="section__heading">Кухни</h1>
                 <div class="page__wrap">
+                    <!-- sidebar -->
                     <div class="page__sidebar sidebar">
                         <div class="sidebar__item">
                             <div class="sidebar__head">Кухни</div>
@@ -168,7 +169,10 @@
                             </div>
                         </div>
                     </div>
+                     <!--end sidebar -->
                     <div class="page__content">
+                        <!-- filter -->
+                        <div class="filter-mobile">Фильтр</div>
                         <form method="POST" class="filter__content">
                             <div class="filter__wrap">
                                 <div class="select filter">
@@ -177,7 +181,7 @@
                                     <ul class="select__list" style="display: none;">
                                         <div class="filter__items">
                                             <div class="toggle toggle_text">  
-                                                <input type="checkbox" checked value="Да, я хочу получать выгодные предложения и новости" id="slideOne" name="akcii" />
+                                                <input type="checkbox" value="Акционный товар" id="slideOne" name="akcii" />
                                                 <label for="slideOne"></label>
                                                 <p>Акционный товар</p>
                                             </div>
@@ -191,7 +195,7 @@
                                     <ul class="select__list" style="display: none;">
                                         <div class="filter__items full">
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="1" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="1" name="size" value="С островом (0)">
                                                   <label for="1">С островом (0)</label>
                                             </div>
                                         </div>
@@ -204,31 +208,31 @@
                                         <ul class="select__list" style="display: none;">
                                             <div class="filter__items full">
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" disabled id="10" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" disabled id="10" name="size" value="Графит">
                                                       <label for="10">Графит</label>
                                                 </div>
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" id="11" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" id="11" name="size" value="Серый (12)">
                                                       <label for="11">Серый (12)</label>
                                                 </div>
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" id="12" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" id="12" name="size" value="Синий (14)">
                                                       <label for="12">Синий (14)</label>
                                                 </div>
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" id="13" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" id="13" name="size" value="Зеленый (6)">
                                                       <label for="13">Зеленый (6)</label>
                                                 </div>
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" id="11" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" id="11" name="size" value="Серый (12)">
                                                       <label for="11">Серый (12)</label>
                                                 </div>
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" id="12" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" id="12" name="size" value="Серый (12)">
                                                       <label for="12">Серый (12)</label>
                                                 </div>
                                                 <div class="page__checkbox">
-                                                    <input type="checkbox" class="checkbox" id="13" name="size" value="#">
+                                                    <input type="checkbox" class="checkbox" id="13" name="size" value="Серый (12)">
                                                       <label for="13">Серый (12)</label>
                                                 </div>
                                             </div>
@@ -241,32 +245,32 @@
                                     <ul class="select__list" style="display: none;">
                                         <div class="filter__items full">
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" disabled id="10" name="size" value="#">
-                                                  <label for="10">Графит</label>
+                                                <input type="checkbox" class="checkbox" disabled id="20" name="size" value="Графит">
+                                                  <label for="20">Графит</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="11" name="size" value="#">
-                                                  <label for="11">Серый (12)</label>
+                                                <input type="checkbox" class="checkbox" id="21" name="size" value="Серый (12)">
+                                                  <label for="21">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="12" name="size" value="#">
-                                                  <label for="12">Синий (14)</label>
+                                                <input type="checkbox" class="checkbox" id="22" name="size" value="Синий (14)">
+                                                  <label for="22">Синий (14)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="13" name="size" value="#">
-                                                  <label for="13">Зеленый (6)</label>
+                                                <input type="checkbox" class="checkbox" id="23" name="size" value="Зеленый (6)">
+                                                  <label for="23">Зеленый (6)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="11" name="size" value="#">
-                                                  <label for="11">Серый (12)</label>
+                                                <input type="checkbox" class="checkbox" id="221" name="size" value="Серый (12)">
+                                                  <label for="221">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="12" name="size" value="#">
-                                                  <label for="12">Серый (12)</label>
+                                                <input type="checkbox" class="checkbox" id="222" name="size" value="Серый (12)">
+                                                  <label for="222">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="13" name="size" value="#">
-                                                  <label for="13">Серый (12)</label>
+                                                <input type="checkbox" class="checkbox" id="223" name="size" value="Серый (12)">
+                                                  <label for="223">Серый (12)</label>
                                             </div>
                                         </div>
                                         <div class="filter_more">Показать все</div>
@@ -278,31 +282,31 @@
                                     <ul class="select__list" style="display: none;">
                                         <div class="filter__items full">
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" disabled id="10" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" disabled id="10" name="size" value="Графит">
                                                   <label for="10">Графит</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="11" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="11" name="size" value="Серый (12)">
                                                   <label for="11">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="12" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="12" name="size" value="Синий (14)">
                                                   <label for="12">Синий (14)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="13" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="13" name="size" value="Зеленый (6)">
                                                   <label for="13">Зеленый (6)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="11" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="11" name="size" value="Серый (12)">
                                                   <label for="11">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="12" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="12" name="size" value="Серый (12)">
                                                   <label for="12">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="13" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="13" name="size" value="Серый (12)">
                                                   <label for="13">Серый (12)</label>
                                             </div>
                                         </div>
@@ -315,31 +319,31 @@
                                     <ul class="select__list" style="display: none;">
                                         <div class="filter__items full">
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" disabled id="10" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" disabled id="10" name="size" value="Графит">
                                                   <label for="10">Графит</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="11" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="11" name="size" value="Серый (12)">
                                                   <label for="11">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="12" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="12" name="size" value="Синий (14)">
                                                   <label for="12">Синий (14)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="13" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="13" name="size" value="Зеленый (6)">
                                                   <label for="13">Зеленый (6)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="11" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="11" name="size" value="Серый (12)">
                                                   <label for="11">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="12" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="12" name="size" value="Серый (12)">
                                                   <label for="12">Серый (12)</label>
                                             </div>
                                             <div class="page__checkbox">
-                                                <input type="checkbox" class="checkbox" id="13" name="size" value="#">
+                                                <input type="checkbox" class="checkbox" id="13" name="size" value="Серый (12)">
                                                   <label for="13">Серый (12)</label>
                                             </div>
                                         </div>
@@ -356,10 +360,13 @@
                                             </div>
                                         </ul>
                                 </div>
+                                <div class="mobile-results">
+                                    
+                                </div>
                             </div>
                             <div class="filter__wrap">
                                 <div class="filter__choise">Выбрано:</div>
-                                <div class="filter__choises">
+                                <div id="filter_res" class="filter__choises">
                                     <div class="filter__item">Все акции (20)<span class="filter_close" >×</span></div>
                                     <div class="filter__item">Акрил (5)<span class="filter_close" >×</span></div>
                                     <div class="filter__item">Цена (17 000-223 430);<span class="filter_close" >×</span></div>
@@ -373,9 +380,10 @@
                                     <div class="filter__item">Все акции (20)<span class="filter_close" >×</span></div>
                                     <div class="filter__item">Все акции (20)<span class="filter_close" >×</span></div>
                                 </div>
-                                <button class="button button__black button__black_arrow" type="submit">ПРИМЕНИТЬ ФИЛЬТР</button>
+                                <button id="filter_submit" class="button button__black button__black_arrow" type="submit">ПРИМЕНИТЬ ФИЛЬТР</button>
                             </div>
                         </form>
+                        <!-- end filter -->
                         <div class="products__items">
                             <a href="" class="products__item catalog">
                                 <div class="products__image">
@@ -466,7 +474,7 @@
                             </a>
                         </div>
                         <div class="pagination">
-                            <a href="" class="pagination__item pagination__prev" hidden></a>
+                            <a href="" class="pagination__item pagination__prev" ></a>
                             <a href="" class="pagination__item current"><span>1</span></a>
                             <a href="" class="pagination__item"><span>2</span></a>
                             <a href="" class="pagination__item"><span>3</span></a>
