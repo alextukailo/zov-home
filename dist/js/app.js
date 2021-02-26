@@ -455,12 +455,12 @@ var selectComponent = function selectComponent() {
 		})
 		
 		if(window.innerWidth <= 537) {
-			let button = document.getElementById('filter_submit')
-			button.classList.remove("button__black")
-			button.classList.remove("button__black_arrow")
-			button.classList.add("button__blue")
-			button.classList.add("button__blue_arrow")
+			const newC = ['button__blue', 'button__blue_arrow'],
+				oldC = ['button__black', 'button__black_arrow']
 			
+			let button = document.getElementById('filter_submit')
+			button.classList.remove(...newC)
+			button.classList.add(...oldC)
 		}
 	   //document.getElementById('filter_res').innerHTML = writeResult.join(' ')
 		// console.log(checkboxes)
