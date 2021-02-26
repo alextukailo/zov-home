@@ -1956,10 +1956,10 @@ h4 {
     content: '';
     display: block;
     position: fixed;
-    top: 10px;
-    top: 1rem;
-    right: 30px;
-    right: 3rem;
+    top: 20px;
+    top: 2rem;
+    right: 20px;
+    right: 2rem;
     background: url(../img/icons/cancel.svg) no-repeat;
     width: 20px;
     width: 2rem;
@@ -3209,7 +3209,8 @@ h4 {
   background: #2C2C2C; }
   @media (max-width: 537px) {
     .footer__inner {
-      padding: 4.5rem 0; } }
+      padding: 4.5rem 0;
+      overflow-x: hidden; } }
 
 .footer__content {
   position: relative;
