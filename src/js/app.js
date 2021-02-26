@@ -237,6 +237,11 @@ var selectComponent = function selectComponent() {
 		$(this).text(text == "Показать все" ? "Скрыть" : "Показать все")
 	});
 
+	$('.faq__head').click(function(){
+		$(this).toggleClass('opened')
+		$(this).next().slideToggle()
+	});
+
     document.querySelectorAll('.input_number').forEach(function (el) {
 		el.addEventListener('input', function () {
 			this.value = this.value.replace(/[^\d]/g, '');

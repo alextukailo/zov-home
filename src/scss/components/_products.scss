@@ -45,6 +45,25 @@
 
            &.catalog {
                width: 31%;
+               @media(--mobile-screen) {
+                width: 100%;
+              }
+              .products__image {
+                @media(--mobile-screen) {
+                    height: 22rem;
+                  }
+              }
+
+              .products__title {
+                  text-align: left;
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 120%;
+                letter-spacing: 0.02em;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #000000;
+                padding: .9rem 1.2rem;
+              }
            }
     }
 

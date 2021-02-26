@@ -770,6 +770,9 @@
   &__content {
     width: 77%;
     margin-bottom: 10.4rem;
+    @media(--mobile-screen) {
+      width: 100%;
+    }
   }
 
   &__wrap {
@@ -787,7 +790,7 @@
   width: 22.5rem;
 
   @media(--mobile-screen) {
-    width: 100%;
+    display: none;
   }
 
   &__item {
@@ -916,8 +919,10 @@
 
 .filter__wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: .4rem;
+
   &:last-child {
     margin-bottom: 3rem;
   }
@@ -954,6 +959,11 @@
   height: 1.4rem;
   background-size: contain;
   transition: all 0.3s;
+  @media(--mobile-screen) {
+    background: url('../img/icons/plus.svg') no-repeat;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 .select__list {
@@ -968,6 +978,16 @@
   z-index: 99;
   padding: 1.2rem 2.4rem;
   border-top: .4rem solid #3F3F3F;
+
+  @media(--mobile-screen) {
+    width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
+    box-shadow: none;
+    border: none;
+    padding: 1.2rem .3rem;
+  }
 }
 
 .select__item {
@@ -1000,12 +1020,22 @@ color: #1D1D1D;
   width: .7rem;
   height: 1.4rem;
   background-size: contain;
+  @media(--mobile-screen) {
+    background: url('../img/icons/minus.svg') no-repeat;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
 }
 
 .filter.select {
   width: 14.2%;
   background: var(--colorWhite);
   padding: 1.3rem;
+  @media(--mobile-screen) {
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+  }
 }
 
 .filter.select .select__head {
@@ -1130,6 +1160,10 @@ color: #1D1D1D;
   &__input {
     display: inline-block;
     width: 15.5rem;
+    @media(--mobile-screen) {
+      width: 49%;
+     }
+     
     input {
       width: 100%;
       font-weight: 600;
@@ -1145,6 +1179,10 @@ color: #1D1D1D;
       &::placeholder {
         color: #BABABA;
       }
+
+      @media(--mobile-screen) {
+        padding: 1rem 1.5rem;
+       }
     }
   }
 
