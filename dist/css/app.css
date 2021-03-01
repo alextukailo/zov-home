@@ -301,8 +301,8 @@ template {
   padding: 0 1.7rem; }
 
 .section__inner {
-  padding: 100px 0;
-  padding: 10rem 0; }
+  padding: 50px 0;
+  padding: 5rem 0; }
   @media (max-width: 537px) {
     .section__inner {
       padding: 4.5rem 0; } }
