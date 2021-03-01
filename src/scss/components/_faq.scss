@@ -1,5 +1,7 @@
 .faq {
-    
+    @media(--mobile-screen) {
+        display: none;
+       }
     &__inner {
         
     }

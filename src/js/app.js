@@ -279,8 +279,6 @@ var selectComponent = function selectComponent() {
 			button.classList.add(...newC)
 			button.classList.remove(...oldC)
 		}
-	   //document.getElementById('filter_res').innerHTML = writeResult.join(' ')
-		// console.log(checkboxes)
 	}
 	displayCheckedFilter()
 

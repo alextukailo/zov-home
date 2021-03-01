@@ -1390,6 +1390,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         background: #1D1D1D;
         -webkit-transform: rotate(180deg);
                 transform: rotate(180deg); } }
+
+.mobile-phonecall {
+  display: none; }
+  @media (max-width: 537px) {
+    .mobile-phonecall {
+      display: block; } }
+  .mobile-phonecall .top-header__text.phone {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    margin-bottom: 8px;
+    margin-bottom: .8rem;
+    margin-top: -12px;
+    margin-top: -1.2rem; }
+  .mobile-phonecall .top-header__link_bold {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 19px;
+    line-height: 1.9rem;
+    letter-spacing: 0.02em;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1D1D1D;
+    text-decoration: none; }
+  .mobile-phonecall__inner {
+    padding-top: 0; }
+  .mobile-phonecall .top-header__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-top: -55px; }
+    .mobile-phonecall .top-header__phone img {
+      display: block;
+      max-width: 35px;
+      max-width: 3.5rem;
+      width: 100%;
+      margin-right: 15px;
+      margin-right: 1.5rem;
+      margin-top: -15px;
+      margin-top: -1.5rem; }
 h1,
 h2,
 h3,
@@ -3243,6 +3297,10 @@ h4 {
 
 .opened.contacts__city {
   border: none; }
+
+@media (max-width: 537px) {
+  .faq {
+    display: none; } }
 
 .faq__content {
   padding: 32px;
