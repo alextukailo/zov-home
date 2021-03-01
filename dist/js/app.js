@@ -428,6 +428,7 @@ var selectComponent = function selectComponent() {
 	if(window.innerWidth <= 537) {
 		$('.filter-mobile').click(function(){
 			$('.filter__content').fadeToggle()
+			$('.filter__choises_mobile').fadeToggle()
 			$(this).toggleClass('opened')
 		});
 	}
@@ -439,20 +440,31 @@ var selectComponent = function selectComponent() {
 	});
 
 	let displayCheckedFilter = () => {
-		let checkboxes = document.getElementsByClassName('checkbox')
-		checkboxes = [].slice.call(checkboxes)
+		var themes = []; 
+		var list_checkbox = document.querySelectorAll('.checkbox'); 
 
-		let writeResult = checkboxes.map(checkbox => {
-			let value = checkbox.value
-			
-			if (!checkbox.checked) {
-					checkbox.nextElementSibling.addEventListener("click", function() {
-						console.log(value)
-						return '<div class="filter__item">'+ value +'<span class="filter_close" >×</span></div>'
-					})
-			} 
-				
+		let choiseArr
+		const output = document.getElementById("filter_res")
+		
+		list_checkbox = [].slice.call(list_checkbox);
+	  
+		list_checkbox.map((item) => {
+		  item.onclick = () => {
+			if (item.checked) {
+			  themes.push(item.value)
+			  choiseArr = themes.slice().join(';')
+			  output.innerHTML = '<div class="filter__item">' +  choiseArr + '</div>'
+			  
+			 
+			} else if (!item.checked) {
+			  themes.pop(item.value)
+			  choiseArr = themes.slice().join(';')
+			  output.innerHTML = '<div class="filter__item">' +  choiseArr + '</div>'
+			}
+		  }
 		})
+
+		
 		
 		if(window.innerWidth <= 537) {
 			const newC = ['button__blue', 'button__blue_arrow'],
@@ -464,6 +476,7 @@ var selectComponent = function selectComponent() {
 		}
 	}
 	displayCheckedFilter()
+
 
 
 
