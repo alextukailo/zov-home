@@ -42,6 +42,10 @@
             top: 0;
             right: 0;
             z-index: 9;
+            @media(--mobile-screen) {
+                right: auto;
+                left: 0;
+            }
         }
 
         &_main {
@@ -117,6 +121,9 @@
         text-transform: uppercase;
         color: #000000;
         margin-bottom: 2.4rem;
+        @media(--mobile-screen) {
+            font-size: 18px;
+        }
     }
 
     &__maindescription {
@@ -260,7 +267,7 @@
                 background-size: cover;
                 padding: 1.6rem;
                 padding-bottom: 1.3rem;
-                margin-right: 2rem;
+                margin-right: 1.2rem;
             }
         }
 
@@ -275,7 +282,7 @@
                 background-size: cover;
                 padding: 1.6rem;
                 padding-bottom: 1.3rem;
-                margin-right: 2rem;
+                margin-right: 1.2rem;
             }
         }
         &.akcii {
@@ -289,7 +296,7 @@
                 background-size: cover;
                 padding: 1.6rem;
                 padding-bottom: 1.3rem;
-                margin-right: 2rem;
+                margin-right: 1.2rem;
             }
         }
 
@@ -304,7 +311,7 @@
                 background-size: cover;
                 padding: 1.6rem;
                 padding-bottom: 1.3rem;
-                margin-right: 2rem;
+                margin-right: 1.2rem;
             }
         }
     }
@@ -314,8 +321,10 @@
         line-height: 16px;
         letter-spacing: 0.02em;
         text-transform: uppercase;
-        
         color: #818181;
+        @media(--mobile-screen) {
+            font-size: 12px;
+        }
     }
 
     &__price {
@@ -324,8 +333,10 @@
         line-height: 28px;
         letter-spacing: 0.02em;
         font-feature-settings: 'pnum' on, 'lnum' on;
-        
         color: #000000;
+        @media(--mobile-screen) {
+            font-size: 18px;
+        }
     }
 
     &__likes {
