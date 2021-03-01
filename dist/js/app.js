@@ -452,13 +452,13 @@ var selectComponent = function selectComponent() {
 		  item.onclick = () => {
 			if (item.checked) {
 			  themes.push(item.value)
-			  choiseArr = themes.slice().join(';')
+			  choiseArr = themes.slice().join('; ')
 			  output.innerHTML = '<div class="filter__item">' +  choiseArr + '</div>'
 			  
 			 
 			} else if (!item.checked) {
 			  themes.pop(item.value)
-			  choiseArr = themes.slice().join(';')
+			  choiseArr = themes.slice().join('; ')
 			  output.innerHTML = '<div class="filter__item">' +  choiseArr + '</div>'
 			}
 		  }

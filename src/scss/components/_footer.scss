@@ -1,5 +1,7 @@
 .footer {
-
+    @media(--mobile-screen) {
+        margin-bottom: 6rem;
+     }
     &__inner {
         padding: 6.4rem 0 3rem 0 ;
         background: #2C2C2C;
