@@ -528,6 +528,7 @@
       line-height: 120%;
       background: var(--colorWhite);
       letter-spacing: 0.02em;
+      text-transform: uppercase;
       color: #1D1D1D;
       box-shadow: var(--shadow);
       overflow: hidden;
@@ -707,6 +708,9 @@
     max-width: 33.5rem;
     width: 100%;
     margin-bottom: 3rem;
+    @media(--mobile-screen) {
+      max-width: 100%;
+  }
 
     input {
       width: 100%;
@@ -1458,6 +1462,10 @@ color: #1D1D1D;
     justify-content: center;
     margin: 0 auto;
     margin-top: -55px;
+
+    &.normal {
+      margin-top: 55px;
+    }
 
     img {
       display: block;
