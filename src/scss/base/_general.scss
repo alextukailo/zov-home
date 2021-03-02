@@ -1643,6 +1643,9 @@ display: none;
     padding: 2.4rem;
     padding-bottom: 1.2rem;
     background: #F8F8F8;
+    @media(--mobile-screen) {
+      padding: 1rem;
+    }
 
     .app__checkbox + label {
       position: relative;
@@ -1659,6 +1662,9 @@ display: none;
       box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
       margin: 0 1.2rem 1.2rem 0;
       padding: 1.3rem;
+      @media(--mobile-screen) {
+        font-size: 8px;
+      }
     }
     .app__checkbox:checked + label {
       background: #1A56B0;

@@ -466,7 +466,7 @@ var selectComponent = function selectComponent() {
 			$(this).next().fadeIn();
 		  }
 		});
-		$('.select_form').on('click', '.select__item', function () {
+		$('.select_form').on('click', '.salon_item', function () {
 		  $('.select__head').removeClass('open');
 		  $(this).parent().fadeOut();
 		  $(this).parent().prev().text($(this).text());
@@ -582,8 +582,6 @@ var selectComponent = function selectComponent() {
 		  }
 		})
 
-		
-		
 		if(window.innerWidth <= 537) {
 			const newC = ['button__blue', 'button__blue_arrow'],
 				oldC = ['button__black', 'button__black_arrow']

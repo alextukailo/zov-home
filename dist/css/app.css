@@ -1637,6 +1637,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-bottom: 12px;
   padding-bottom: 1.2rem;
   background: #F8F8F8; }
+  @media (max-width: 537px) {
+    .form .kitchen-fasad {
+      padding: 1rem; } }
   .form .kitchen-fasad .app__checkbox + label {
     position: relative;
     width: -webkit-max-content;
@@ -1660,6 +1663,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin: 0 1.2rem 1.2rem 0;
     padding: 13px;
     padding: 1.3rem; }
+    @media (max-width: 537px) {
+      .form .kitchen-fasad .app__checkbox + label {
+        font-size: 8px; } }
   .form .kitchen-fasad .app__checkbox:checked + label {
     background: #1A56B0;
     border: none;
