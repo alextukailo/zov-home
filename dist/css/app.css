@@ -1523,7 +1523,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-right: .8rem; }
     .mobile-consult__item p {
       font-weight: bold;
-      font-size: 6px;
+      font-size: 7.5px;
       line-height: 120%;
       letter-spacing: 0.03em;
       color: #000000; }
@@ -2648,7 +2648,9 @@ h4 {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      background: #fff; } }
+      background: #fff;
+      -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, .1); } }
   .nav-mobile__image {
     background: #2C2C2C;
     padding: 18px 15px;

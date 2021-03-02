@@ -1526,6 +1526,7 @@ display: none;
     justify-content: center;
     width: 33.33%;
     padding: 1.4rem 0;
+
     &:nth-child(even) {
       background: #F8F8F8;
     }
@@ -1537,7 +1538,7 @@ display: none;
 
     p {
       font-weight: bold;
-      font-size: 6px;
+      font-size: 7.5px;
       line-height: 120%;
       letter-spacing: 0.03em;
       color: #000000;
