@@ -2113,7 +2113,7 @@ h4 {
   @media (max-width: 537px) {
     .button__blue_arrow {
       width: 100%;
-      padding-left: 30%; } }
+      padding-left: 35%; } }
   .button__blue_arrow:after {
     content: url(../img/icons/white_arrow.svg);
     display: -webkit-box;
