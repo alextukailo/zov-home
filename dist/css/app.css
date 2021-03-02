@@ -1558,7 +1558,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           justify-content: space-between; }
 
 .form__text {
-  width: 31%;
+  width: 32%;
   margin-bottom: 20px;
   margin-bottom: 2rem; }
   @media (max-width: 537px) {
