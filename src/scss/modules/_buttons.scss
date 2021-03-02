@@ -12,6 +12,7 @@
     outline: none;
     cursor: pointer;
     transition: transform 0.2s ease-out;
+    height: fit-content;
 
     @media(--mobile-screen) {
         width: 100%;
@@ -21,6 +22,32 @@
         color: var(--colorWhite);
         background: var(--colorBlack);
         border: .2rem solid #484848;
+
+        &_attach {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0;
+            padding-right: 4.7rem;
+            border: 2px solid #484848;
+
+            @media(--mobile-screen) {
+                width: 100%;
+                padding-right: 31%;
+            }
+            &:before {
+                content: url('../img/icons/paper-clip.svg');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 4.8rem;
+                height: 4.8rem;
+                background: #161616;
+                margin-right: 2.7rem;
+            }
+        }
     }
 
     &__gray {

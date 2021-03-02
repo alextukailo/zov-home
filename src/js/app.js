@@ -241,6 +241,7 @@ var selectComponent = function selectComponent() {
 		$(this).parent().prev().text($(this).text());
 		$(this).parent().prev().prev().val($(this).data("value"));
 	  });
+	
 	  $('.select').on('click', '.select__value', function () {
 		var _this = this;
   
@@ -267,6 +268,44 @@ var selectComponent = function selectComponent() {
   };
   
   selectComponent();
+
+  var selectCustomComponent = function selectCustomComponent () {
+		
+	jQuery(function ($) {
+		$('.select_form').on('click', '.select_head', function () {
+		  if ($(this).hasClass('open')) {
+			$(this).removeClass('open');
+			$(this).next().fadeOut();
+		  } else {
+			$('.select_head').removeClass('open');
+			$('.select__items').fadeOut();
+			$(this).addClass('open');
+			$(this).next().fadeIn();
+		  }
+		});
+		$('.select_form').on('click', '.select__item', function () {
+		  $('.select__head').removeClass('open');
+		  $(this).parent().fadeOut();
+		  $(this).parent().prev().text($(this).text());
+		  $(this).parent().prev().prev().val($(this).text());
+		});
+	  
+		
+		$('.select_form').on('input', '.select__value', function () {
+		  $(this).parent().prev().text($(this).val());
+		  $(this).parent().prev().prev().val($(this).text());
+		});
+
+		$(document).click(function (e) {
+			if (!$(e.target).closest('.select_form').length) {
+			  $('.select_head').removeClass('open');
+			  $('.select__items').fadeOut();
+			}
+		  });
+	  });
+	
+  }
+  selectCustomComponent()
   
   $('.nav-mobile__button').click(function(){
     $('.nav-mobile__menu').fadeIn();
@@ -299,7 +338,10 @@ var selectComponent = function selectComponent() {
 		selectLists.map(selectList => {
 			if (selectList.children[0].children.length < 2) {
 				selectList.children[0].classList.remove("full")
-				selectList.children[0].children[0].style.marginBottom = "0"
+				if(typeof(selectList.children[0].children[0]) != "undefined" && selectList.children[0].children[0] !== null) {
+					selectList.children[0].children[0].style.marginBottom = "0"
+				}
+				
 				selectList.children[1].hidden = true
 			}
 		})
@@ -364,8 +406,10 @@ var selectComponent = function selectComponent() {
 				oldC = ['button__black', 'button__black_arrow']
 			
 			let button = document.getElementById('filter_submit')
-			button.classList.add(...newC)
-			button.classList.remove(...oldC)
+			if(typeof(button) != "undefined" && button !== null) {
+				button.classList.add(...newC)
+				button.classList.remove(...oldC)
+			}
 		}
 	}
 	displayCheckedFilter()
@@ -374,10 +418,44 @@ var selectComponent = function selectComponent() {
 		let item = document.getElementById('likes')
 		let clicks = 0
 
-		item.onclick = function() {
-			clicks += 1;
-  			this.innerHTML = clicks;
+		if(typeof(item) != "undefined" && item !== null) {
+			item.onclick = function() {
+				clicks += 1;
+				  this.innerHTML = clicks;
+			}
 		}
+		
 	}
 	likes()
 
+
+	let fileOutput = document.getElementById('fileOutput')
+	function validateFile() {
+		
+        
+        // const allowedExtensions =  ['jpg','png','svg'],
+        const allowedExtensions =  [],
+            sizeLimit = 10000000; 
+            let files = [].slice.call(this.files)
+
+        const { name:fileName, size:fileSize } = this.files[0];
+
+        const fileExtension = fileName.split(".").pop();
+
+        if(!allowedExtensions.includes(fileExtension)){
+            let filesList = files.map(file => {
+                const fileType = file.name.split(".").pop();
+               return '<div><span class="badge mr-1 badge-danger">' + fileType + '</span><span id="fileNameOutput">' + file.name + '</span></div>'
+            })
+
+            fileOutput.innerHTML = filesList.join(' ')
+            
+        } else if(fileSize > sizeLimit){
+            // this.value = null;
+        }
+    }
+	if(typeof(fileOutput) != "undefined" && fileOutput !== null) {
+		document.getElementById("fileUpload").addEventListener("change", validateFile)
+	}
+
+   
