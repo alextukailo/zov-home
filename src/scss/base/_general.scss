@@ -1978,3 +1978,207 @@ display: none;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.form-designer {
+  background: url('../img/backgrounds/jutta.jpg') no-repeat;
+  background-size: cover;
+  background-position: right;
+  
+  
+  &__inner {
+    max-width: 47%;
+    display: block;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 4rem 3.2rem;
+    @media(--mobile-screen) {
+      max-width: 100%;
+      padding: 5.6rem 1.5rem;
+    }
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1D1D1D;
+    margin-bottom: 3.2rem;
+    span {
+      color: #1A56B0;
+    }
+  }
+
+  .form__text {
+    width: 100%;
+  }
+
+  .block_wrap {
+    margin-bottom: 0;
+    p {
+      max-width: 100% !important; 
+      font-weight: 600;
+      font-size: 8px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #818181;
+    }
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
+
+.call-designer {
+
+  &__inner {
+    padding: 6.4rem 3.2rem 4.5rem 3.2rem;
+    background: #ffffff;
+    @media(--mobile-screen) {
+      max-width: 100%;
+      padding: 5rem 1.5rem;
+    }
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1D1D1D;
+    margin-bottom: 3.2rem;
+    @media(--mobile-screen) {
+      font-size: 1.8rem;
+      margin-bottom: 1.6rem;
+    }
+
+    &_line {
+
+      &:before {
+        content: '';
+        display: block;
+        width: 4.4rem;
+        height: .4rem;
+        background: #1A56B0;
+        margin-bottom: 1.1rem;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 47rem;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #1D1D1D;
+    margin-bottom: 5rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    @media(--mobile-screen) {
+      margin-bottom: 4rem;
+    }
+
+    &_grey {
+      font-weight: 500;
+      color: #818181;
+    }
+
+    &_center {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    @media(--mobile-screen) {
+      margin-bottom: 4rem;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    width: 24%;
+    background-color: #1D1D1D;
+    padding: 2.2rem 1.6rem 1.6rem 1.6rem;
+    @media(--mobile-screen) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.6rem;
+      padding: .5rem;
+    }
+  }
+
+  &__img {
+    margin-bottom: 2.2rem;
+    @media(--mobile-screen) {
+      padding: 2.6rem 1.6rem;
+      background: #2E2E2E;
+      margin-bottom: 0;
+      margin-right: 1.6rem;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    @media(--mobile-screen) {
+      font-size: 12px;
+    }
+  }
+
+  &__can {
+    display: flex;
+    width: 49%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1D1D1D;
+    margin-bottom: 2.4rem;
+    @media(--mobile-screen) {
+      width: 100%;
+    }
+
+    &:before {
+      content: '';
+      display: table;
+      background: url('../img/icons/check-circle.svg') no-repeat;
+      width: 1.4rem;
+      height: 1.4rem;
+      background-size: cover;
+      margin-right: 1.2rem;
+      margin-top: .3rem;
+    }
+  }
+
+}
