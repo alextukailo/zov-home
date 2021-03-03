@@ -252,7 +252,7 @@ var selectCustomComponent = function selectCustomComponent() {
       }
     });
     $('.select_form').on('click', '.salon_item', function () {
-      $('.select__head').removeClass('open');
+      $('.select_head').removeClass('open');
       $(this).parent().fadeOut();
       $(this).parent().prev().text($(this).text());
       $(this).parent().prev().prev().val($(this).text());
@@ -383,8 +383,6 @@ var likes = function likes() {
 };
 
 likes();
-
-
 var fileOutput = document.getElementById('fileOutput');
 
 function validateFile() {
