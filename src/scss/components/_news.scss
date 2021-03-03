@@ -15,6 +15,7 @@
     }
 
     &__item {
+        position: relative;
         display: block;
         width: 31.5%;
         background: var(--colorWhite);
@@ -63,10 +64,13 @@
         letter-spacing: 0.02em;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #1D1D1D;
-        margin-bottom: 1.6rem;
+        margin-bottom: 2.6rem;
     }
 
     &__date {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
         font-weight: 600;
         font-size: 1.2rem;
         line-height: 1.4rem;
