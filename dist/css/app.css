@@ -4012,7 +4012,8 @@ h4 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, .1); }
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+    z-index: 9; }
   .news__filter .select__item {
     font-weight: 600;
     font-size: 12px;
