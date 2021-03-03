@@ -2973,7 +2973,8 @@ h4 {
   @media (max-width: 537px) {
     .hero__slide {
       padding-top: 15rem;
-      padding-bottom: 1.6rem; } }
+      padding-bottom: 1.6rem;
+      background-position: bottom center !important; } }
 
 .hero__heading {
   font-weight: bold;
