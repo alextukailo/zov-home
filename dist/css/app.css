@@ -798,7 +798,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 1.2rem 2.8rem;
     border-left: 4px solid #3F3F3F;
     border-left: .4rem solid #3F3F3F;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+    .sidebar__head:hover {
+      color: #1D1D1D;
+      border-left: 4px solid #1A56B0;
+      border-left: .4rem solid #1A56B0; }
     .sidebar__head.opened {
       background: #1A56B0;
       border-left: 4px solid #254D8A;

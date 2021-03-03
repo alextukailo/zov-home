@@ -843,6 +843,12 @@
     padding: 1.2rem 2.8rem;
     border-left: .4rem solid #3F3F3F;
     cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: #1D1D1D;
+      border-left: .4rem solid #1A56B0;
+    }
 
     &.opened {
       background: #1A56B0;
