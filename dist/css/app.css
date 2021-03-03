@@ -1476,8 +1476,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 auto;
-    margin-top: -55px; }
+    margin: 0 auto; }
     .mobile-phonecall .top-header__phone.normal {
       margin-top: 55px; }
     .mobile-phonecall .top-header__phone img {
