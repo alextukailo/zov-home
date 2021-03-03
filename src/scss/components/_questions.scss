@@ -3,6 +3,7 @@
     &__inner {
         background: url('../img/backgrounds/questions.jpg') no-repeat;
         background-size: cover;
+        background-position: right bottom;
 
         @media(--mobile-screen) {
             background: url('../img/backgrounds/questions_mobile.jpg') no-repeat;
