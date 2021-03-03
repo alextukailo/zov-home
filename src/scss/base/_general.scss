@@ -2115,9 +2115,11 @@ display: none;
   }
 
   &__item {
+    position: relative;
     width: 24%;
     background-color: #1D1D1D;
     padding: 2.2rem 1.6rem 1.6rem 1.6rem;
+
     @media(--mobile-screen) {
       width: 100%;
       display: flex;
@@ -2139,6 +2141,19 @@ display: none;
       width: 3rem;
       height: 3rem;
       object-fit: cover;
+    }
+
+    &_ghost {
+      position: absolute;
+      top: 0;
+      left: -2rem;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: .1;
+      @media(--mobile-screen) {
+        display: none;
+      }
     }
   }
 

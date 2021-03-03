@@ -318,7 +318,6 @@ let reviewsTextLimit = () => {
 	btns = [].slice.call(btns)
 	text.map(item => {
 		item.innerText = item.innerText.slice(0,270) + '...'
-		
 	})
 }
 // reviewsTextLimit()

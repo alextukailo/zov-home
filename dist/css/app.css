@@ -2117,6 +2117,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 0; }
 
 .call-designer__item {
+  position: relative;
   width: 24%;
   background-color: #1D1D1D;
   padding: 22px 16px 16px 16px;
@@ -2149,6 +2150,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 3rem;
     -o-object-fit: cover;
        object-fit: cover; }
+  .call-designer__img_ghost {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    left: -2rem;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: .1; }
+    @media (max-width: 537px) {
+      .call-designer__img_ghost {
+        display: none; } }
 
 .call-designer__description {
   font-weight: 600;
