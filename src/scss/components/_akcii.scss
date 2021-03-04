@@ -1,0 +1,142 @@
+.akcii {
+
+    &__total {
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2.4rem;
+    }
+
+    &__wrap {
+        position: relative;
+        width: 57%;
+        height: 37.7rem;
+        @media(--mobile-screen) {
+            width: 100%;
+        }
+
+        &_card {
+            width: 100%;
+            height: 20rem;
+
+            .akcii__title {
+                font-size: 1.2rem;
+                left: 2.4rem;
+                bottom: 1.2rem;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -6rem;
+        @media(--mobile-screen) {
+            margin-right: 0;
+        }
+    }
+
+    &__item {
+        width: 29.9%;
+        margin-right: 3rem;
+        margin-bottom: 2.4rem;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        @media(--mobile-screen) {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &__shortinf {
+        padding: 1.6rem 2.4rem;
+        background: #ffffff;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #1D1D1D;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 2.4rem;
+        bottom: 1.6rem;
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+
+        &_black {
+            position: relative;
+            left: auto;
+            bottom: auto;
+            color: #1D1D1D;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__info {
+        width: 43%;
+        padding: 3.2rem 3rem;
+        background: #FFFFFF;
+        @media(--mobile-screen) {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        display: block;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+        margin-bottom: 1.6rem;
+    }
+
+    &__notice {
+        display: block;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+        margin-bottom: 3.2rem;
+        span {
+            color: #F05540; 
+        }
+    }
+
+    &__expiration {
+        display: block;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #1A56B0;
+    }
+}
