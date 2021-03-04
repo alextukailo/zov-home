@@ -638,8 +638,15 @@ var selectComponent = function selectComponent() {
 		document.getElementById("fileUpload").addEventListener("change", validateFile)
 	}
 
-   
+   let compactContactsNavItems = () => {
+	   	const wrap = document.getElementById('nav-contacts') 
+		let items = document.getElementsByClassName('nav-contacts__item')
 
+		if(items.length >= 9 && typeof(wrap) != "undefined" && wrap !== null && typeof(items) != "undefined" && items !== null) {
+			wrap.classList.add('more')
+		}
+   }
+   compactContactsNavItems()
 
 /***/ }),
 

@@ -249,12 +249,17 @@
 }
 
 .nav-contacts {
-    max-width: 110rem;
+    max-width: 111rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2.4rem 1.5rem;
-    overflow-x: scroll;
+
+    &.more {
+        justify-content: initial;
+        overflow-x: scroll;
+    }
+
     @media(--mobile-screen) {
         display: none;
     }

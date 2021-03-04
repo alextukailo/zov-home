@@ -408,3 +408,14 @@ function validateFile() {
 if (typeof fileOutput != "undefined" && fileOutput !== null) {
   document.getElementById("fileUpload").addEventListener("change", validateFile);
 }
+
+var compactContactsNavItems = function compactContactsNavItems() {
+  var wrap = document.getElementById('nav-contacts');
+  var items = document.getElementsByClassName('nav-contacts__item');
+
+  if (items.length >= 9 && typeof wrap != "undefined" && wrap !== null && typeof items != "undefined" && items !== null) {
+    wrap.classList.add('more');
+  }
+};
+
+compactContactsNavItems();

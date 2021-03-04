@@ -4280,8 +4280,8 @@ h4 {
   border: none; }
 
 .nav-contacts {
-  max-width: 1100px;
-  max-width: 110rem;
+  max-width: 1110px;
+  max-width: 111rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4292,8 +4292,12 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 24px 15px;
-  padding: 2.4rem 1.5rem;
-  overflow-x: scroll; }
+  padding: 2.4rem 1.5rem; }
+  .nav-contacts.more {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    overflow-x: scroll; }
   @media (max-width: 537px) {
     .nav-contacts {
       display: none; } }
