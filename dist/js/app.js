@@ -668,6 +668,7 @@ var selectComponent = function selectComponent() {
 					document.getElementById('akcii_secondtitle_output').textContent = item.dataset.title
 					document.getElementById('akcii_desc_output').textContent = item.dataset.description
 					document.getElementById('akcii_expiration_output').textContent = item.dataset.expiration
+					$('html, body').animate({scrollTop:$('#akcii').position().top - 65}, 'slow');
 				}
 			})
 		}
