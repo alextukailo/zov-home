@@ -324,9 +324,10 @@
 
   .container {
       display: block;
-      max-width: 110rem;
+      max-width: 111rem;
       margin: 0 auto;
       padding: 0 1.7rem;
+      box-sizing: content-box;
   }
 
   .section {
