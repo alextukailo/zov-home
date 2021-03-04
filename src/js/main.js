@@ -441,7 +441,7 @@ var displayAkcii = function displayAkcii() {
         document.getElementById('akcii_desc_output').textContent = item.dataset.description;
         document.getElementById('akcii_expiration_output').textContent = item.dataset.expiration;
         $('html, body').animate({
-          scrollTop: $('#akcii').position().top - 65
+          scrollTop: $('#akcii').position().top - 10
         }, 'slow');
       };
     });
