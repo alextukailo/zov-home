@@ -419,3 +419,30 @@ var compactContactsNavItems = function compactContactsNavItems() {
 };
 
 compactContactsNavItems();
+
+var displayAkcii = function displayAkcii() {
+  var items = document.getElementsByClassName('akcii-card');
+
+  if (typeof items != "undefined" && items !== null) {
+    items = [].slice.call(items);
+    items.map(function (item, i) {
+      if (i == 0) {
+        document.getElementById('akcii_image_output').src = item.dataset.image;
+        document.getElementById('akcii_title_output').textContent = item.dataset.title;
+        document.getElementById('akcii_secondtitle_output').textContent = item.dataset.title;
+        document.getElementById('akcii_desc_output').textContent = item.dataset.description;
+        document.getElementById('akcii_expiration_output').textContent = item.dataset.expiration;
+      }
+
+      item.onclick = function () {
+        document.getElementById('akcii_image_output').src = item.dataset.image;
+        document.getElementById('akcii_title_output').textContent = item.dataset.title;
+        document.getElementById('akcii_secondtitle_output').textContent = item.dataset.title;
+        document.getElementById('akcii_desc_output').textContent = item.dataset.description;
+        document.getElementById('akcii_expiration_output').textContent = item.dataset.expiration;
+      };
+    });
+  }
+};
+
+displayAkcii();

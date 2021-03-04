@@ -5048,6 +5048,10 @@ h4 {
   .goods-page {
     padding-bottom: 8.8rem; } }
 
+@media (max-width: 537px) {
+  .akcii {
+    padding: 1.6rem 0 2rem 0; } }
+
 .akcii__total {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5066,7 +5070,8 @@ h4 {
   height: 37.7rem; }
   @media (max-width: 537px) {
     .akcii__wrap {
-      width: 100%; } }
+      width: 100%;
+      height: 21.5rem; } }
   .akcii__wrap_card {
     width: 100%;
     height: 200px;
@@ -5104,6 +5109,9 @@ h4 {
     .akcii__item {
       width: 100%;
       margin-right: 0; } }
+  @media (max-width: 537px) {
+    .akcii__item:last-child {
+      margin-bottom: 0; } }
 
 .akcii__shortinf {
   padding: 16px 24px;
@@ -5146,6 +5154,9 @@ h4 {
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on;
   color: #FFFFFF; }
+  @media (max-width: 537px) {
+    .akcii__title {
+      font-size: 1.4rem; } }
   .akcii__title_black {
     position: relative;
     left: auto;
@@ -5161,7 +5172,8 @@ h4 {
   background: #FFFFFF; }
   @media (max-width: 537px) {
     .akcii__info {
-      width: 100%; } }
+      width: 100%;
+      padding: 2.4rem 1.5rem; } }
 
 .akcii__description {
   display: block;
@@ -5175,6 +5187,9 @@ h4 {
   color: #000000;
   margin-bottom: 16px;
   margin-bottom: 1.6rem; }
+  @media (max-width: 537px) {
+    .akcii__description {
+      font-size: 1.2rem; } }
 
 .akcii__notice {
   display: block;
@@ -5188,6 +5203,9 @@ h4 {
   color: #000000;
   margin-bottom: 32px;
   margin-bottom: 3.2rem; }
+  @media (max-width: 537px) {
+    .akcii__notice {
+      font-size: 1.2rem; } }
   .akcii__notice span {
     color: #F05540; }
 
@@ -5201,6 +5219,9 @@ h4 {
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on;
   color: #1A56B0; }
+  @media (max-width: 537px) {
+    .akcii__expiration {
+      font-size: 1.2rem; } }
 
 @media (max-width: 537px) {
   .footer {
