@@ -1,0 +1,36 @@
+.form__text, 
+.form__control, 
+.form__textarea, 
+.form__block_row {
+  position: relative;
+}
+
+div.input_error {
+  position: absolute;
+  bottom: -15px;
+  font-size: 12px;
+  color: #C51C10;
+}
+
+label.input_error {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  font-size: 12px;
+  color: #C51C10;
+}
+
+.form .kitchen-form .form__control + label.input_error {
+  position: absolute;
+  left: auto;
+  bottom: auto;
+  font-size: 12px;
+  color: #C51C10;
+}
+
+.processing  ~ label.input_error {
+  position: absolute;
+  bottom: 0px;
+  font-size: 12px;
+  color: #C51C10;
+}

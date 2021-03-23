@@ -2206,7 +2206,10 @@ display: none;
 }
 
 
-.form__text, .form__control, .form__textarea {
+.form__text, 
+.form__control, 
+.form__textarea, 
+.form__block_row {
   position: relative;
 }
 
@@ -2229,6 +2232,13 @@ label.input_error {
   position: absolute;
   left: auto;
   bottom: auto;
+  font-size: 12px;
+  color: #C51C10;
+}
+
+.processing  ~ label.input_error {
+  position: absolute;
+  bottom: 0px;
   font-size: 12px;
   color: #C51C10;
 }

@@ -569,11 +569,12 @@ var selectComponent = function selectComponent() {
 
 		errorPlacement: function(error, element) {
             if (element.attr("name") == "kitchen_form") {
-//Здесь пиши любые операции если чекбокс не отмечен
                 error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
+			} else if (element.attr("name") == "kitchen_processing") {
+				error.insertAfter(element.parent());
+			} else {
+				error.insertAfter(element);
+			}
             return true;
         },
 
@@ -668,7 +669,7 @@ var selectComponent = function selectComponent() {
 			required: "Обязательное поле!"
 		},
 		kitchen_processing: {
-			required: "Подтвердите!"
+			required:  "Подтвердите согласие!"
 		}
 		
 	  },

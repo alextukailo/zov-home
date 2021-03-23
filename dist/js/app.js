@@ -680,7 +680,8 @@ const validateForms = () => {
   formph.validate({
     errorPlacement: function (error, element) {
       if (element.attr("name") == "kitchen_form") {
-        //Здесь пиши любые операции если чекбокс не отмечен
+        error.insertAfter(element.parent());
+      } else if (element.attr("name") == "kitchen_processing") {
         error.insertAfter(element.parent());
       } else {
         error.insertAfter(element);
@@ -776,7 +777,7 @@ const validateForms = () => {
         required: "Обязательное поле!"
       },
       kitchen_processing: {
-        required: "Подтвердите!"
+        required: "Подтвердите согласие!"
       }
     },
     errorElement: "label",
