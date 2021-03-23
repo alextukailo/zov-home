@@ -2213,6 +2213,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: 1.2rem;
     margin-top: 3px;
     margin-top: .3rem; }
+
+.form__text, .form__control, .form__textarea {
+  position: relative; }
+
+div.input_error {
+  position: absolute;
+  bottom: -15px;
+  font-size: 12px;
+  color: #C51C10; }
+
+label.input_error {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  font-size: 12px;
+  color: #C51C10; }
+
+.form .kitchen-form .form__control + label.input_error {
+  position: absolute;
+  left: auto;
+  bottom: auto;
+  font-size: 12px;
+  color: #C51C10; }
 h1,
 h2,
 h3,

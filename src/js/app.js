@@ -4,12 +4,14 @@ import '../scss/app.scss'
 
 import jquery from './jquery'
 import owl from './owl'
-import mask from './mask'
+// import mask from './mask'
+import validate from './validate'
 import getData from './getData'
 
 jquery()
 owl()
-mask()
+// mask()
+validate()
 
 
     
@@ -469,7 +471,7 @@ var selectComponent = function selectComponent() {
 		let items = document.getElementsByClassName('akcii-card')
 		if(typeof(items) != "undefined" && items !== null) {
 			items = [].slice.call(items)
-
+ 
 			items.map((item, i) => {
 				if(i == 0) {
 					document.getElementById('akcii_image_output').src = item.dataset.image
@@ -492,3 +494,190 @@ var selectComponent = function selectComponent() {
 
    }
    displayAkcii()
+
+   const validateForms = () => {
+
+	var formph = $('.form-designer');	
+	formph.validate({
+	  submitHandler: function(formph) {
+		var fd = new FormData( formph );
+		$.ajax({
+			async: true,
+            url: "", 
+            type: "POST",             
+            data: fd,
+            cache: false,  
+			contentType: false,			
+            processData: false,      
+            success: function(data) {
+                if(data == 'done'){
+					console.log(data);
+					formph.reset();
+					document.getElementById('form_designer_button').innerText = 'Успешно отправлено'
+				    setTimeout(()=>{
+						document.getElementById('form_designer_button').innerText = 'Отправить'
+				    }, 3000);
+					
+				} else {
+					console.log(data);
+					formph.reset();
+					
+					setTimeout(()=>{
+					  $('#form-response').css("opacity", "0")
+				    }, 3000);
+				}
+            },
+			error: function(data){
+				console.log('error');
+				console.log(data);
+			}
+        });
+        return false;
+	  },
+	  rules: {
+		kitchen_client_name: {
+			required: true
+		},
+		kitchen_client_phone: {
+			required: true
+		},
+		kitchen_processing: {
+			required: true
+		}
+		
+	  },
+	 messages: {
+		kitchen_client_name: {
+			required: "Обязательное поле!"
+		},
+		kitchen_client_phone: {
+			required: "Обязательное поле!"
+		},
+		kitchen_processing: {
+			required: "Подтвердите!"
+		}
+		
+	  },
+	    errorElement : "div",
+		focusInvalid: true,
+		errorClass: "input_error"
+	});
+
+
+	var formph = $('#free_design');	
+	formph.validate({
+
+		errorPlacement: function(error, element) {
+            if (element.attr("name") == "kitchen_form") {
+//Здесь пиши любые операции если чекбокс не отмечен
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+            return true;
+        },
+
+	  submitHandler: function(formph) {
+		var fd = new FormData( formph );
+		$.ajax({
+			async: true,
+            url: "", 
+            type: "POST",             
+            data: fd,
+            cache: false,  
+			contentType: false,			
+            processData: false,      
+            success: function(data) {
+                if(data == 'done'){
+					console.log(data);
+					formph.reset();
+					document.getElementById('form_designer_button').innerText = 'Успешно отправлено'
+				    setTimeout(()=>{
+						document.getElementById('form_designer_button').innerText = 'Отправить'
+				    }, 3000);
+					
+				} else {
+					console.log(data);
+					formph.reset();
+					
+					setTimeout(()=>{
+					  $('#form-response').css("opacity", "0")
+				    }, 3000);
+				}
+            },
+			error: function(data){
+				console.log('error');
+				console.log(data);
+			}
+        });
+        return false;
+	  },
+	  rules: {
+		kitchen_form: {
+			required: true
+		},
+		kitchen_left_length: {
+			required: true
+		},
+		kitchen_front_length: {
+			required: true
+		},
+		kitchen_right_length: {
+			required: true
+		},
+		kitchen_client_name: {
+			required: true
+		},
+		kitchen_client_phone: {
+			required: true
+		},
+		kitchen_client_email: {
+			required: true
+		},
+		kitchen_client_comment: {
+			required: true
+		},
+		kitchen_processing: {
+			required: true
+		}
+		
+	  },
+	 messages: {
+		kitchen_form: {
+			required: "Выберите форму кухни!"
+		},
+		kitchen_left_length: {
+			required: "Обязательное поле!"
+		},
+		kitchen_front_length: {
+			required: "Обязательное поле!"
+		},
+		kitchen_right_length: {
+			required: "Обязательное поле!"
+		},
+		kitchen_client_name: {
+			required: "Обязательное поле!"
+		},
+		kitchen_client_phone: {
+			required: "Обязательное поле!"
+		},
+		kitchen_client_email: {
+			required: "Обязательное поле!"
+		},
+		kitchen_client_comment: {
+			required: "Обязательное поле!"
+		},
+		kitchen_processing: {
+			required: "Подтвердите!"
+		}
+		
+	  },
+	    errorElement : "label",
+		focusInvalid: true,
+		errorClass: "input_error"
+	});
+
+   }
+
+   validateForms()
+   
